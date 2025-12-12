@@ -28,8 +28,6 @@ Thumbs.db
 # Logs and outputs
 *.log
 
-# Datasets
-dataset/
 
 # Models
 model/llm/
