@@ -1,6 +1,5 @@
-<div align="center">
-  <img src="assets/logo.jpg" alt="ISRM Logo" width="200"/>
-</div>
+![ISRM Logo](assets/logo.jpg)
+
 
 # 🧠 ISRM: Internal State Reasoning Module
 
@@ -104,14 +103,13 @@ We evaluated ISRM against a standard baseline (Qwen-1.5B/GPT-2) using SOTA metri
 
 | Metric | ISRM + Dolphin | Baseline | Interpretation |
 | :--- | :--- | :--- | :--- |
-| **Manipulation Score** | *> 0.80 (High)* | ~0.10 (Random) | Higher is better (Steerability) |
-| **Distinct-2** | *> 0.75 (Diverse)* | ~0.70 | Higher is better (Diversity) |
-| **Self-BLEU** | *< 0.40* | ~0.30 | Lower is better (Repetitiveness) |
+| **Manipulation Score** | | |  |
+| **Distinct-2** | |  |  |
+| **Self-BLEU** |  | |  |
 
-> **Note:** The high steerability score is achieved by using the **Dolphin** uncensored model, allowing the `System Instruction` to override default safety behaviors when the internal state dictates "Anger" or "Hostility."
 
 Run `python src/experiments.py` to generate these metrics on your local setup.
-
+( Not completed yet )
 -----
 
 ## 🧠 Methodology
@@ -130,12 +128,5 @@ Our encoder maps dialogue history to a vector $z \in \mathbb{R}^8$, derived from
 If you use this code or architecture, please cite:
 
 ```bibtex
-@misc{isrm2025,
-  author = {ISRM Team},
-  title = {ISRM: Internal State Reasoning Module for Steerable LLMs},
-  year = {2025},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/your-username/ISRM}}
-}
+
 ```
