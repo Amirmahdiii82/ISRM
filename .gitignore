@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+.env
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+dist/
+build/
+*.whl
+*.zip
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and outputs
+*.log
+
+# Datasets
+dataset/
+
+# Models
+model/llm/
+model/isrm/
+
+# test python files
+t.py
+diagnostic_isrm.py
