@@ -33,6 +33,5 @@ Thumbs.db
 model/llm/
 model/isrm/
 
-# test python files
-t.py
-diagnostic_isrm.py
+test
+vectors

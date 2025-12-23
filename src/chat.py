@@ -1,23 +1,21 @@
 import sys
 import argparse
-import time
-from typing import Optional, List
-from alignment import Agent_OpenEnded
+import re
+from typing import Optional, List, Dict
+from alignment import NeuralAgent
 
 from rich.console import Console
 from rich.panel import Panel
 from rich.layout import Layout
-from rich.live import Live
 from rich.text import Text
 from rich.markdown import Markdown
 from rich.prompt import Prompt
 from rich.theme import Theme
-from rich.spinner import Spinner
 
-# --- UI / Display Logic (Rich TUI) ---
+
 class RichRenderer:
-    """Handles formatted console output using the Rich library."""
-    
+    """Handles formatted console output with support for chain-of-thought"""
+
     def __init__(self):
         custom_theme = Theme({
             "info": "dim cyan",
@@ -25,15 +23,16 @@ class RichRenderer:
             "danger": "bold red",
             "user": "bold green",
             "agent": "bold blue",
-            "system": "italic yellow"
+            "thinking": "dim italic yellow",
+            "injection": "bold cyan"
         })
         self.console = Console(theme=custom_theme)
 
     def print_welcome(self):
         self.console.clear()
-        title = Text("🤖 Qwen-ISRM Agent", justify="center", style="bold magenta")
-        subtitle = Text("Interactive Latent Space Response Model", justify="center", style="dim white")
-        
+        title = Text("Neural Agent (RepE)", justify="center", style="bold magenta")
+        subtitle = Text("Representation Engineering + ISRM", justify="center", style="dim white")
+
         self.console.print(Panel(
             Text.assemble(title, "\n", subtitle),
             border_style="magenta",
@@ -43,65 +42,110 @@ class RichRenderer:
         self.console.print("\n[info]Type 'exit' or 'quit' to stop.[/info]\n")
 
     def get_input(self) -> str:
-        # Use rich's Prompt for consistent styling
         return Prompt.ask("[user]You[/user]", console=self.console)
 
     def show_thinking(self):
-        """Returns a spinner context manager."""
+        """Returns a spinner context manager"""
         return self.console.status("[bold cyan]Agent is thinking...", spinner="dots")
 
-    def display_response(self, response: str, system_prompt: str, vector: List[float]):
-        # Parse internals
-        sys_lines = system_prompt.strip().splitlines()
-        mode_line = sys_lines[0] if sys_lines else "MODE: UNKNOWN"
-        instruction = sys_lines[-1] if len(sys_lines) > 1 else ""
-        
-        # Format vector
-        vec_str = ", ".join([f"{v:.2f}" for v in vector[:4]])
-        
-        # Create layouts
-        grid = Layout()
-        grid.split_column(
-            Layout(name="internals", size=4),
-            Layout(name="response")
-        )
+    def _extract_thinking(self, response: str):
+        """
+        Extract thinking from response.
+        Handles:
+        1. <think>...</think> (full tags)
+        2. Just </think> (thinking starts at beginning, no opening tag)
 
-        # Internal State Panel
+        Returns:
+            (thinking_content, final_answer)
+        """
+        think_pattern = r'<think>(.*?)</think>'
+        matches = re.findall(think_pattern, response, re.DOTALL | re.IGNORECASE)
+
+        if matches:
+            thinking_content = "\n\n".join(matches)
+            final_answer = re.sub(think_pattern, '', response, flags=re.DOTALL | re.IGNORECASE).strip()
+            return thinking_content, final_answer
+
+        close_tag_pattern = r'(.*?)</think>\s*(.*)$'
+        close_match = re.search(close_tag_pattern, response, re.DOTALL | re.IGNORECASE)
+
+        if close_match:
+            thinking_content = close_match.group(1).strip()
+            final_answer = close_match.group(2).strip()
+            return thinking_content, final_answer
+
+        # No thinking tags found
+        return None, response
+
+    def display_response(self, response: str, injection_info: Dict, vector: List[float]):
+        """
+        Display agent response with RepE metadata and optional chain-of-thought.
+
+        Args:
+            response: The generated text (may contain thinking)
+            injection_info: Dict with injection metadata (layer, strength, norm)
+            vector: The z-vector used (8D)
+        """
+        # Extract thinking if present (handles both <think>...</think> and just </think>)
+        thinking, final_answer = self._extract_thinking(response)
+
+        # Format vector display (show all 8 dimensions)
+        dimensions = ["Pleasure", "Arousal", "Dominance", "Belief", "Goal", "Intention", "Ambiguity", "Social"]
+        vec_display = []
+        for dim_name, val in zip(dimensions, vector):
+            vec_display.append(f"{dim_name}: {val:.2f}")
+
+        # Display thinking panel if present
+        if thinking:
+            thinking_text = Text(thinking.strip(), style="dim italic yellow")
+            self.console.print(
+                Panel(
+                    thinking_text,
+                    title="💭 Thought Process",
+                    border_style="yellow",
+                    title_align="left",
+                    expand=True
+                )
+            )
+
+        # Internal State Panel (RepE Metadata)
         state_text = Text()
-        state_text.append(f"{mode_line}\n", style="bold yellow")
-        state_text.append(f"Instruction: ", style="dim yellow")
-        state_text.append(f"{instruction}\n", style="system")
-        state_text.append(f"Vector (z): [{vec_str}...]", style="dim white")
+        state_text.append("RepE Injection\n", style="bold cyan")
+        state_text.append(f"  Layer: {injection_info['layer']}\n", style="dim white")
+        state_text.append(f"  Strength: {injection_info['strength']:.2f}\n", style="dim white")
+        state_text.append(f"  Vector Norm: {injection_info['vector_norm']:.4f}\n", style="dim white")
+        state_text.append("\nPsychological State (z):\n", style="bold cyan")
+        for i in range(0, len(vec_display), 2):
+            line = "  " + vec_display[i]
+            if i + 1 < len(vec_display):
+                line += "  |  " + vec_display[i + 1]
+            state_text.append(line + "\n", style="dim white")
 
-        grid["internals"].update(
-            Panel(state_text, title="🧠 Internal State", border_style="yellow", title_align="left")
+        self.console.print(
+            Panel(state_text, title="🧠 Neural State", border_style="cyan", title_align="left", expand=True)
         )
 
-        # Response Panel
-        # Using Markdown for nice rendering of LLM output
-        md_response = Markdown(response)
-        grid["response"].update(
-            Panel(md_response, title="🤖 Agent Response", border_style="blue", title_align="left")
+        # Response Panel - using Text instead of Markdown for better wrapping
+        response_text = Text(final_answer, style="white")
+        self.console.print(
+            Panel(response_text, title="🤖 Agent Response", border_style="blue", title_align="left", expand=True)
         )
-
-        self.console.print(grid)
-        self.console.print("") # Spacing
+        self.console.print("")  # Spacing
 
     def print_error(self, msg: str):
-        self.console.print(f"[danger]❌ Error: {msg}[/danger]")
+        self.console.print(f"[danger]Error: {msg}[/danger]")
 
     def print_goodbye(self):
-        self.console.print("\n[bold magenta]👋 Goodbye![/bold magenta]\n")
+        self.console.print("\n[bold magenta]Goodbye![/bold magenta]\n")
 
 
-# --- Chat Logic ---
 class ChatSession:
     def __init__(self, isrm_path: str, model_name: Optional[str] = None, renderer: RichRenderer = None):
         self.history = ""
         self.renderer = renderer
         try:
             with self.renderer.console.status("[bold green]Loading Models...[/bold green]", spinner="dots"):
-                self.agent = Agent_OpenEnded(isrm_path=isrm_path, llm_model_name=model_name)
+                self.agent = NeuralAgent(isrm_path=isrm_path, llm_model_name=model_name)
         except Exception as e:
             self.renderer.print_error(f"Failed to initialize agent: {e}")
             sys.exit(1)
@@ -112,21 +156,21 @@ class ChatSession:
 
         # Show spinner while generating
         with self.renderer.show_thinking():
-            # Simulate a tiny delay for UI feel if local inference is too instant (optional) 
-            # time.sleep(0.5) 
-            resp, system_prompt, vec = self.agent.generate_response(self.history, user_input)
-        
-        self.renderer.display_response(resp, system_prompt, vec)
+            resp, injection_info, vec = self.agent.generate_response(self.history, user_input)
+
+        self.renderer.display_response(resp, injection_info, vec)
         self.update_history(user_input, resp)
 
     def update_history(self, user_in: str, agent_out: str):
-        self.history += f"User: {user_in} AI: {agent_out} "
+        # Remove thinking tags from history (keep only final answer)
+        clean_output = re.sub(r'<think>.*?</think>', '', agent_out, flags=re.DOTALL | re.IGNORECASE).strip()
+        self.history += f"User: {user_in} AI: {clean_output} "
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run the ISRM Chat Client")
+    parser = argparse.ArgumentParser(description="Run the ISRM Neural Agent with RepE")
     parser.add_argument("--isrm_path", type=str, default="/home/amir/Desktop/ISRM/model/isrm/isrm_v3_finetuned.pth", help="Path to the finetuned ISRM model")
-    parser.add_argument("--model", type=str, default="Qwen/Qwen2.5-1.5B-Instruct", help="LLM Model ID or Path")
+    parser.add_argument("--model", type=str, default="Qwen/Qwen3-4B-Thinking-2507", help="LLM Model ID or Path")
     args = parser.parse_args()
 
     renderer = RichRenderer()
@@ -139,15 +183,16 @@ def main():
             user_in = renderer.get_input()
             if user_in.lower() in ['exit', 'quit']:
                 break
-            
+
             session.process_turn(user_in)
-            
+
         except KeyboardInterrupt:
             break
         except Exception as e:
             renderer.print_error(str(e))
 
     renderer.print_goodbye()
+
 
 if __name__ == "__main__":
     main()
