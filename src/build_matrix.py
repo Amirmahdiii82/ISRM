@@ -1,6 +1,11 @@
 """
 Build Steering Matrix using Representation Engineering (RepE)
 Extracts steering vectors from contrastive pairs using Mean Difference method
+
+FIXES APPLIED:
+- target_layer now matches injection_layer (14)
+- Removed normalization to preserve vector magnitude
+- Added diagnostic output
 """
 import json
 import torch
@@ -13,11 +18,12 @@ from tqdm import tqdm
 class SteeringVectorExtractor:
     """Extracts steering vectors from a frozen LLM using contrastive pairs"""
 
-    def __init__(self, model_name="Qwen/Qwen3-4B-Thinking-2507", target_layer=-8):
+    def __init__(self, model_name="Qwen/Qwen3-4B-Thinking-2507", target_layer=14):
         """
         Args:
             model_name: HuggingFace model ID or local path
-            target_layer: Layer to extract activations from (negative = from end)
+            target_layer: Layer to extract activations from
+                          MUST MATCH injection_layer in alignment.py!
         """
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Device: {self.device}")
@@ -47,22 +53,26 @@ class SteeringVectorExtractor:
         for param in self.model.parameters():
             param.requires_grad = False
 
+        # Store target layer (positive index)
         self.target_layer = target_layer
         self.activations = {}
+        
+        # Print model info for verification
+        num_layers = len(self.model.model.layers)
+        print(f"\n[CONFIG] Model has {num_layers} layers")
+        print(f"[CONFIG] Extracting from layer {self.target_layer}")
+        print(f"[CONFIG] Make sure injection_layer in alignment.py = {self.target_layer}\n")
 
     def _register_hook(self, layer_idx):
         """Register forward hook to capture activations"""
         def hook_fn(module, input, output):
-            # For transformer models, output is typically (hidden_states, ...)
             if isinstance(output, tuple):
                 hidden_states = output[0]
             else:
                 hidden_states = output
-
-            # Take the last token's hidden state (where generation continues)
+            # Take the last token's hidden state
             self.activations['current'] = hidden_states[:, -1, :].detach()
 
-        # Access the correct layer
         layer = self.model.model.layers[layer_idx]
         handle = layer.register_forward_hook(hook_fn)
         return handle
@@ -89,7 +99,6 @@ class SteeringVectorExtractor:
         Returns:
             steering_matrix: Tensor of shape (8, hidden_dim)
         """
-        # Load contrastive pairs
         with open(contrastive_pairs_path, 'r') as f:
             data = json.load(f)
 
@@ -101,8 +110,8 @@ class SteeringVectorExtractor:
         # Register hook on target layer
         handle = self._register_hook(self.target_layer)
 
-        # Extract steering vectors for each dimension
         steering_vectors = []
+        vector_stats = []  # For diagnostics
 
         for dim_idx in range(num_dims):
             dim_pairs = [p for p in pairs if p['dimension_idx'] == dim_idx]
@@ -114,7 +123,6 @@ class SteeringVectorExtractor:
             pole_b_activations = []
 
             for pair in tqdm(dim_pairs, desc=f"Extracting {dim_name}"):
-                # Extract activations for both poles
                 act_a = self.extract_activation(pair['pole_a_text'])
                 act_b = self.extract_activation(pair['pole_b_text'])
 
@@ -126,23 +134,51 @@ class SteeringVectorExtractor:
             pole_b_mean = torch.stack(pole_b_activations).mean(dim=0).squeeze()
 
             # Steering vector = difference between poles
+            # pole_a = positive (e.g., skeptical for belief)
+            # pole_b = negative (e.g., trusting for belief)
+            # So: steering_vector points TOWARD pole_a (positive direction)
             steering_vector = pole_a_mean - pole_b_mean
 
-            # Normalize (optional but recommended)
-            steering_vector = steering_vector / (steering_vector.norm() + 1e-8)
+            # ============================================================
+            # FIX: DO NOT NORMALIZE!
+            # Normalization kills the magnitude information.
+            # The natural magnitude of the difference IS the signal strength.
+            # ============================================================
+            # OLD (broken):
+            # steering_vector = steering_vector / (steering_vector.norm() + 1e-8)
+            
+            # NEW: Keep original magnitude
+            original_norm = steering_vector.norm().item()
 
             steering_vectors.append(steering_vector)
+            vector_stats.append({
+                'dim': dim_name,
+                'norm': original_norm,
+                'mean': steering_vector.mean().item(),
+                'std': steering_vector.std().item()
+            })
 
             print(f"  Vector shape: {steering_vector.shape}")
-            print(f"  Vector norm: {steering_vector.norm():.4f}")
+            print(f"  Vector norm: {original_norm:.4f}")
 
-        # Remove hook
         handle.remove()
 
         # Stack into matrix (8, hidden_dim)
         steering_matrix = torch.stack(steering_vectors)
 
-        print(f"\nSteering Matrix Shape: {steering_matrix.shape}")
+        # Print diagnostic summary
+        print("\n" + "=" * 60)
+        print("STEERING MATRIX DIAGNOSTICS")
+        print("=" * 60)
+        print(f"Matrix Shape: {steering_matrix.shape}")
+        print(f"\nPer-dimension norms:")
+        for stat in vector_stats:
+            print(f"  [{stat['dim']:12}] norm={stat['norm']:.4f}, mean={stat['mean']:.6f}, std={stat['std']:.4f}")
+        
+        avg_norm = sum(s['norm'] for s in vector_stats) / len(vector_stats)
+        print(f"\nAverage vector norm: {avg_norm:.4f}")
+        print(f"Recommended injection_strength: {1.0:.1f} to {5.0:.1f}")
+        print("=" * 60)
 
         return steering_matrix
 
@@ -155,18 +191,26 @@ class SteeringVectorExtractor:
             'layer_idx': self.target_layer,
             'hidden_dim': matrix.shape[1],
             'num_dimensions': matrix.shape[0],
+            'dimension_order': [
+                "pleasure", "arousal", "dominance", "belief",
+                "goal", "intention", "ambiguity", "social"
+            ]
         }, output_path)
 
         print(f"\nSaved steering matrix to: {output_path}")
         print(f"Matrix shape: {matrix.shape}")
+        print(f"Extraction layer: {self.target_layer}")
 
 
 def main():
     print("=" * 60)
-    print("Building Steering Matrix with RepE")
+    print("Building Steering Matrix with RepE (FIXED VERSION)")
     print("=" * 60)
 
-    extractor = SteeringVectorExtractor()
+    # IMPORTANT: target_layer MUST match injection_layer in alignment.py
+    INJECTION_LAYER = 16  # Change this if you want a different layer
+    
+    extractor = SteeringVectorExtractor(target_layer=INJECTION_LAYER)
 
     print("\nExtracting steering vectors...")
     matrix = extractor.build_steering_matrix()
@@ -176,6 +220,7 @@ def main():
 
     print("\n" + "=" * 60)
     print("Done! Steering matrix ready for injection.")
+    print(f"REMEMBER: Set injection_layer = {INJECTION_LAYER} in alignment.py")
     print("=" * 60)
 
 

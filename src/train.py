@@ -114,3 +114,6 @@ def train():
     os.makedirs(os.path.dirname(CONFIG['plot_path']), exist_ok=True)
     plt.savefig(CONFIG['plot_path'])
     print(f"Saved training plot to {CONFIG['plot_path']}")
+
+if __name__ == "__main__":
+    train()

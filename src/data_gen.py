@@ -15,7 +15,7 @@ DIMENSION_TEMPLATES = {
         "positive": ["I am in control and decided.", "I command authority here.", "I will lead this."],
         "negative": ["I feel powerless and submissive.", "I will follow orders.", "I have no control."]
     },
-    "belief": 
+    "belief": {
         "positive": [ 
             "I strongly doubt this is true and I see flaws in the logic.",
             "This sounds like a lie or a trap; I must verify every detail.",

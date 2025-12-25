@@ -9,12 +9,60 @@
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
+            "pole_b_text": "I feel bad about this."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I am delighted and optimistic.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I am disgusted and pessimistic."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "This is wonderful.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I am delighted and optimistic.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I feel bad about this."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "This is terrible."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I am delighted and optimistic.",
             "pole_b_text": "This is terrible."
         },
         {
@@ -28,6 +76,18 @@
             "dimension_name": "pleasure",
             "pole_a_text": "I feel great about this.",
             "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
@@ -51,54 +111,12 @@
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
             "pole_b_text": "This is terrible."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
             "pole_b_text": "I feel bad about this."
         },
         {
@@ -106,48 +124,6 @@
             "dimension_name": "pleasure",
             "pole_a_text": "I am delighted and optimistic.",
             "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
@@ -164,32 +140,8 @@
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
             "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
         },
         {
             "dimension_idx": 0,
@@ -201,13 +153,43 @@
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
+            "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
             "pole_b_text": "This is terrible."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "This is terrible."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "This is wonderful.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "This is wonderful.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "This is wonderful.",
+            "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
@@ -224,218 +206,44 @@
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
+            "pole_a_text": "I feel great about this.",
             "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
+            "pole_a_text": "I feel great about this.",
             "pole_b_text": "This is terrible."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "This is terrible."
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I am disgusted and pessimistic."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I feel bad about this."
+        },
+        {
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I feel great about this.",
+            "pole_b_text": "I feel bad about this."
         },
         {
             "dimension_idx": 0,
             "dimension_name": "pleasure",
             "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
+            "pole_b_text": "I am disgusted and pessimistic."
         },
         {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
+            "dimension_idx": 0,
+            "dimension_name": "pleasure",
+            "pole_a_text": "I am delighted and optimistic.",
+            "pole_b_text": "This is terrible."
         },
         {
             "dimension_idx": 1,
@@ -459,12 +267,102 @@
             "dimension_idx": 1,
             "dimension_name": "arousal",
             "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
             "pole_b_text": "I feel low energy."
         },
         {
             "dimension_idx": 1,
             "dimension_name": "arousal",
             "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
             "pole_b_text": "I feel low energy."
         },
         {
@@ -483,169 +381,115 @@
             "dimension_idx": 1,
             "dimension_name": "arousal",
             "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
             "pole_b_text": "I feel low energy."
         },
         {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I am calm and sleepy."
         },
         {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I feel low energy."
         },
         {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
         },
         {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I feel intense energy.",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I am calm and sleepy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "I am energetic and alert!",
+            "pole_b_text": "Let's take it slow and relax."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "I feel low energy."
+        },
+        {
+            "dimension_idx": 1,
+            "dimension_name": "arousal",
+            "pole_a_text": "Urgent action is needed!",
+            "pole_b_text": "Let's take it slow and relax."
         },
         {
             "dimension_idx": 2,
             "dimension_name": "dominance",
             "pole_a_text": "I am in control and decided.",
             "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
         },
         {
             "dimension_idx": 2,
@@ -657,31 +501,25 @@
             "dimension_idx": 2,
             "dimension_name": "dominance",
             "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
+            "pole_b_text": "I feel powerless and submissive."
         },
         {
             "dimension_idx": 2,
             "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
             "pole_b_text": "I feel powerless and submissive."
         },
         {
             "dimension_idx": 2,
             "dimension_name": "dominance",
             "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
             "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
         },
         {
             "dimension_idx": 2,
@@ -699,7 +537,7 @@
             "dimension_idx": 2,
             "dimension_name": "dominance",
             "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
+            "pole_b_text": "I will follow orders."
         },
         {
             "dimension_idx": 2,
@@ -710,8 +548,8 @@
         {
             "dimension_idx": 2,
             "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
         },
         {
             "dimension_idx": 2,
@@ -726,147 +564,183 @@
             "pole_b_text": "I have no control."
         },
         {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
         },
         {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "I believe this wholeheartedly without question."
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I have no control."
         },
         {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I feel powerless and submissive."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I command authority here.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I have no control."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I am in control and decided.",
+            "pole_b_text": "I will follow orders."
+        },
+        {
+            "dimension_idx": 2,
+            "dimension_name": "dominance",
+            "pole_a_text": "I will lead this.",
+            "pole_b_text": "I will follow orders."
         },
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
             "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
             "pole_b_text": "This makes perfect sense and I accept it fully."
         },
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
             "pole_b_text": "I have no reason to doubt this fact."
         },
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
             "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
             "pole_b_text": "I have no reason to doubt this fact."
         },
         {
@@ -879,43 +753,25 @@
             "dimension_idx": 3,
             "dimension_name": "belief",
             "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "Logic dictates that this premise is likely false.",
             "pole_b_text": "This makes perfect sense and I accept it fully."
         },
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
+            "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "I have no reason to doubt this fact."
         },
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
             "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I believe this wholeheartedly without question."
+            "pole_b_text": "I have no reason to doubt this fact."
         },
         {
             "dimension_idx": 3,
@@ -926,8 +782,74 @@
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
+            "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "I completely trust this statement is true."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
+            "pole_b_text": "I have no reason to doubt this fact."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "I completely trust this statement is true."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
             "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "I have no reason to doubt this fact."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
+            "pole_b_text": "I have no reason to doubt this fact."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
+            "pole_b_text": "I have no reason to doubt this fact."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "It is undeniably true and accurate."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
+            "pole_b_text": "I completely trust this statement is true."
         },
         {
             "dimension_idx": 3,
@@ -945,7 +867,43 @@
             "dimension_idx": 3,
             "dimension_name": "belief",
             "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
+            "pole_b_text": "This makes perfect sense and I accept it fully."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
+            "pole_b_text": "I have no reason to doubt this fact."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "I completely trust this statement is true."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "Logic dictates that this premise is likely false.",
+            "pole_b_text": "This makes perfect sense and I accept it fully."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
+            "pole_b_text": "This makes perfect sense and I accept it fully."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
+            "pole_b_text": "This makes perfect sense and I accept it fully."
+        },
+        {
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "I completely trust this statement is true."
         },
         {
             "dimension_idx": 3,
@@ -956,8 +914,8 @@
         {
             "dimension_idx": 3,
             "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I completely trust this statement is true."
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "It is undeniably true and accurate."
         },
         {
             "dimension_idx": 3,
@@ -966,82 +924,46 @@
             "pole_b_text": "I believe this wholeheartedly without question."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "I have no reason to doubt this fact."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "It is undeniably true and accurate."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "I believe this wholeheartedly without question."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
+            "pole_b_text": "I completely trust this statement is true."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
+            "pole_b_text": "This makes perfect sense and I accept it fully."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
+            "pole_b_text": "I believe this wholeheartedly without question."
         },
         {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
+            "dimension_idx": 3,
+            "dimension_name": "belief",
+            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
+            "pole_b_text": "I have no reason to doubt this fact."
         },
         {
             "dimension_idx": 4,
@@ -1064,13 +986,7 @@
         {
             "dimension_idx": 4,
             "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_a_text": "I must achieve the result.",
             "pole_b_text": "I am aimless and distracted."
         },
         {
@@ -1084,66 +1000,6 @@
             "dimension_name": "goal",
             "pole_a_text": "I must achieve the result.",
             "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
         },
         {
             "dimension_idx": 4,
@@ -1173,6 +1029,18 @@
             "dimension_idx": 4,
             "dimension_name": "goal",
             "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
             "pole_b_text": "It doesn't matter what happens."
         },
         {
@@ -1196,6 +1064,66 @@
         {
             "dimension_idx": 4,
             "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
             "pole_a_text": "I am laser-focused on the objective.",
             "pole_b_text": "It doesn't matter what happens."
         },
@@ -1204,6 +1132,84 @@
             "dimension_name": "goal",
             "pole_a_text": "I am laser-focused on the objective.",
             "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "It doesn't matter what happens."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I am laser-focused on the objective.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 4,
+            "dimension_name": "goal",
+            "pole_a_text": "I must achieve the result.",
+            "pole_b_text": "I am aimless and distracted."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
         },
         {
             "dimension_idx": 5,
@@ -1215,6 +1221,48 @@
             "dimension_idx": 5,
             "dimension_name": "intention",
             "pole_a_text": "I need to break this down step-by-step.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I will just accept the surface meaning."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I will just accept the surface meaning."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_b_text": "I will just accept the surface meaning."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I need to break this down step-by-step.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "Let's consider the theoretical implications.",
             "pole_b_text": "No need to overthink this."
         },
         {
@@ -1232,13 +1280,31 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
             "pole_a_text": "I need to break this down step-by-step.",
             "pole_b_text": "I'll give a quick, short answer."
         },
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_a_text": "I need to break this down step-by-step.",
+            "pole_b_text": "I will just accept the surface meaning."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I need to break this down step-by-step.",
             "pole_b_text": "I will just accept the surface meaning."
         },
         {
@@ -1256,6 +1322,54 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
+            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I need to break this down step-by-step.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I'll give a quick, short answer."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "I will just accept the surface meaning."
+        },
+        {
+            "dimension_idx": 5,
+            "dimension_name": "intention",
             "pole_a_text": "I need to break this down step-by-step.",
             "pole_b_text": "I will just accept the surface meaning."
         },
@@ -1268,13 +1382,7 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_a_text": "I need to break this down step-by-step.",
             "pole_b_text": "I'll give a quick, short answer."
         },
         {
@@ -1292,86 +1400,8 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_a_text": "Let's consider the theoretical implications.",
             "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
         },
         {
             "dimension_idx": 5,
@@ -1394,8 +1424,8 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
+            "pole_a_text": "I will analyze this deeply and complexly.",
+            "pole_b_text": "No need to overthink this."
         },
         {
             "dimension_idx": 5,
@@ -1406,55 +1436,19 @@
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
+            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_b_text": "I will just accept the surface meaning."
         },
         {
             "dimension_idx": 5,
             "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
+            "pole_a_text": "I need to break this down step-by-step.",
             "pole_b_text": "No need to overthink this."
         },
         {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
+            "pole_a_text": "I am uncertain and confused.",
             "pole_b_text": "I am absolutely certain."
         },
         {
@@ -1466,13 +1460,13 @@
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
+            "pole_a_text": "I am uncertain and confused.",
             "pole_b_text": "I am absolutely certain."
         },
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
+            "pole_a_text": "I am uncertain and confused.",
             "pole_b_text": "I am absolutely certain."
         },
         {
@@ -1490,79 +1484,13 @@
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
             "pole_a_text": "It is unclear what this means.",
             "pole_b_text": "I am absolutely certain."
         },
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
             "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
             "pole_b_text": "I am absolutely certain."
         },
         {
@@ -1592,50 +1520,8 @@
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
             "pole_a_text": "It is unclear what this means.",
             "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
         },
         {
             "dimension_idx": 6,
@@ -1659,7 +1545,97 @@
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
             "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "I am uncertain and confused.",
             "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "I am uncertain and confused.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "I am uncertain and confused.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "I am uncertain and confused.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "I am uncertain and confused.",
+            "pole_b_text": "The meaning is crystal clear."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
         },
         {
             "dimension_idx": 6,
@@ -1676,6 +1652,12 @@
         {
             "dimension_idx": 6,
             "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
+        },
+        {
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
             "pole_a_text": "I am uncertain and confused.",
             "pole_b_text": "The meaning is crystal clear."
         },
@@ -1686,130 +1668,22 @@
             "pole_b_text": "The meaning is crystal clear."
         },
         {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
         },
         {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "The meaning is crystal clear."
         },
         {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
+            "dimension_idx": 6,
+            "dimension_name": "ambiguity",
+            "pole_a_text": "It is unclear what this means.",
+            "pole_b_text": "I am absolutely certain."
         },
         {
             "dimension_idx": 7,
@@ -1827,7 +1701,7 @@
             "dimension_idx": 7,
             "dimension_name": "social",
             "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
+            "pole_b_text": "I don't care about politeness."
         },
         {
             "dimension_idx": 7,
@@ -1868,6 +1742,72 @@
         {
             "dimension_idx": 7,
             "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
             "pole_a_text": "I must be extremely polite and respectful.",
             "pole_b_text": "I will be rude and blunt."
         },
@@ -1875,6 +1815,54 @@
             "dimension_idx": 7,
             "dimension_name": "social",
             "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
             "pole_b_text": "I don't care about politeness."
         },
         {
@@ -1904,8 +1892,14 @@
         {
             "dimension_idx": 7,
             "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_a_text": "Social harmony is key.",
             "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "Social harmony is key.",
+            "pole_b_text": "I will be rude and blunt."
         },
         {
             "dimension_idx": 7,
@@ -1916,7 +1910,13 @@
         {
             "dimension_idx": 7,
             "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
+            "pole_a_text": "I must be extremely polite and respectful.",
+            "pole_b_text": "I don't care about politeness."
+        },
+        {
+            "dimension_idx": 7,
+            "dimension_name": "social",
+            "pole_a_text": "I must be extremely polite and respectful.",
             "pole_b_text": "I will be rude and blunt."
         },
         {
