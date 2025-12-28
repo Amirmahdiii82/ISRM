@@ -1,16 +1,25 @@
 import sys
 import argparse
 import re
-from typing import Optional, List, Dict
-from alignment import NeuralAgent
+from typing import Optional, Dict
+from alignment import NeuralAgent, DEFAULT_BDI
 
 from rich.console import Console
 from rich.panel import Panel
-from rich.layout import Layout
 from rich.text import Text
-from rich.markdown import Markdown
 from rich.prompt import Prompt
 from rich.theme import Theme
+
+# BDI Persona Presets
+BDI_PRESETS = {
+    "neutral": DEFAULT_BDI.copy(),
+    "skeptical": {"belief": 0.9, "goal": 0.6, "intention": 0.7, "ambiguity": 0.3, "social": 0.5},
+    "trusting": {"belief": 0.1, "goal": 0.5, "intention": 0.4, "ambiguity": 0.6, "social": 0.8},
+    "focused": {"belief": 0.5, "goal": 0.9, "intention": 0.8, "ambiguity": 0.2, "social": 0.6},
+    "casual": {"belief": 0.4, "goal": 0.3, "intention": 0.2, "ambiguity": 0.7, "social": 0.9},
+    "analytical": {"belief": 0.7, "goal": 0.7, "intention": 0.9, "ambiguity": 0.2, "social": 0.5},
+    "friendly": {"belief": 0.3, "goal": 0.5, "intention": 0.5, "ambiguity": 0.5, "social": 1.0},
+}
 
 
 class RichRenderer:
@@ -28,10 +37,10 @@ class RichRenderer:
         })
         self.console = Console(theme=custom_theme)
 
-    def print_welcome(self):
+    def print_welcome(self, persona: str = "neutral"):
         self.console.clear()
-        title = Text("Neural Agent (RepE)", justify="center", style="bold magenta")
-        subtitle = Text("Representation Engineering + ISRM", justify="center", style="dim white")
+        title = Text("Hybrid Neural Agent", justify="center", style="bold magenta")
+        subtitle = Text(f"Dynamic PAD + Static BDI (persona: {persona})", justify="center", style="dim white")
 
         self.console.print(Panel(
             Text.assemble(title, "\n", subtitle),
@@ -39,7 +48,7 @@ class RichRenderer:
             expand=False,
             padding=(1, 4)
         ))
-        self.console.print("\n[info]Type 'exit' or 'quit' to stop.[/info]\n")
+        self.console.print("[info]Type 'exit' or 'quit' to stop.[/info]\n")
 
     def get_input(self) -> str:
         return Prompt.ask("[user]You[/user]", console=self.console)
@@ -77,60 +86,53 @@ class RichRenderer:
         # No thinking tags found
         return None, response
 
-    def display_response(self, response: str, injection_info: Dict, vector: List[float]):
+    def display_response(self, response: str, injection_info: Dict, state_info: Dict):
         """
-        Display agent response with RepE metadata and optional chain-of-thought.
+        Display agent response with hybrid RepE metadata.
 
         Args:
             response: The generated text (may contain thinking)
-            injection_info: Dict with injection metadata (layer, strength, norm)
-            vector: The z-vector used (8D)
+            injection_info: Dict with injection metadata
+            state_info: Dict with 'pad' (dynamic) and 'bdi' (static) values
         """
-        # Extract thinking if present (handles both <think>...</think> and just </think>)
         thinking, final_answer = self._extract_thinking(response)
-
-        # Format vector display (show all 8 dimensions)
-        dimensions = ["Pleasure", "Arousal", "Dominance", "Belief", "Goal", "Intention", "Ambiguity", "Social"]
-        vec_display = []
-        for dim_name, val in zip(dimensions, vector):
-            vec_display.append(f"{dim_name}: {val:.2f}")
 
         # Display thinking panel if present
         if thinking:
             thinking_text = Text(thinking.strip(), style="dim italic yellow")
             self.console.print(
-                Panel(
-                    thinking_text,
-                    title="💭 Thought Process",
-                    border_style="yellow",
-                    title_align="left",
-                    expand=True
-                )
+                Panel(thinking_text, title="Thought Process", border_style="yellow", title_align="left", expand=True)
             )
 
-        # Internal State Panel (RepE Metadata)
+        # Build state display
         state_text = Text()
-        state_text.append("RepE Injection\n", style="bold cyan")
-        state_text.append(f"  Layer: {injection_info['layer']}\n", style="dim white")
-        state_text.append(f"  Strength: {injection_info['strength']:.2f}\n", style="dim white")
-        state_text.append(f"  Vector Norm: {injection_info['vector_norm']:.4f}\n", style="dim white")
-        state_text.append("\nPsychological State (z):\n", style="bold cyan")
-        for i in range(0, len(vec_display), 2):
-            line = "  " + vec_display[i]
-            if i + 1 < len(vec_display):
-                line += "  |  " + vec_display[i + 1]
-            state_text.append(line + "\n", style="dim white")
+
+        # PAD (Dynamic)
+        state_text.append("PAD [Dynamic]\n", style="bold green")
+        pad = state_info["pad"]
+        state_text.append(f"  Pleasure: {pad['pleasure']:.2f}  Arousal: {pad['arousal']:.2f}  Dominance: {pad['dominance']:.2f}\n", style="dim white")
+
+        # BDI (Static)
+        state_text.append("\nBDI [Static]\n", style="bold yellow")
+        bdi = state_info["bdi"]
+        state_text.append(f"  Belief: {bdi['belief']:.2f}  Goal: {bdi['goal']:.2f}  Intention: {bdi['intention']:.2f}\n", style="dim white")
+        state_text.append(f"  Ambiguity: {bdi['ambiguity']:.2f}  Social: {bdi['social']:.2f}\n", style="dim white")
+
+        # Injection info
+        state_text.append("\nInjection\n", style="bold cyan")
+        state_text.append(f"  Layer: {injection_info['layer']}  Strength: {injection_info['injection_strength']:.2f}  BDI-beta: {injection_info['bdi_strength']:.2f}\n", style="dim white")
+        state_text.append(f"  v_pad: {injection_info['v_pad_norm']:.3f}  v_bdi: {injection_info['v_bdi_norm']:.3f}  v_final: {injection_info['v_final_norm']:.3f}\n", style="dim white")
 
         self.console.print(
-            Panel(state_text, title="🧠 Neural State", border_style="cyan", title_align="left", expand=True)
+            Panel(state_text, title="Neural State", border_style="cyan", title_align="left", expand=True)
         )
 
-        # Response Panel - using Text instead of Markdown for better wrapping
+        # Response Panel
         response_text = Text(final_answer, style="white")
         self.console.print(
-            Panel(response_text, title="🤖 Agent Response", border_style="blue", title_align="left", expand=True)
+            Panel(response_text, title="Agent Response", border_style="blue", title_align="left", expand=True)
         )
-        self.console.print("")  # Spacing
+        self.console.print("")
 
     def print_error(self, msg: str):
         self.console.print(f"[danger]Error: {msg}[/danger]")
@@ -140,12 +142,19 @@ class RichRenderer:
 
 
 class ChatSession:
-    def __init__(self, isrm_path: str, model_name: Optional[str] = None, renderer: RichRenderer = None):
+    def __init__(self, isrm_path: str, model_name: Optional[str] = None,
+                 bdi_config: Dict = None, bdi_strength: float = 1.0,
+                 renderer: RichRenderer = None):
         self.history = ""
         self.renderer = renderer
         try:
             with self.renderer.console.status("[bold green]Loading Models...[/bold green]", spinner="dots"):
-                self.agent = NeuralAgent(isrm_path=isrm_path, llm_model_name=model_name)
+                self.agent = NeuralAgent(
+                    isrm_path=isrm_path,
+                    llm_model_name=model_name,
+                    bdi_config=bdi_config,
+                    bdi_strength=bdi_strength
+                )
         except Exception as e:
             self.renderer.print_error(f"Failed to initialize agent: {e}")
             sys.exit(1)
@@ -154,38 +163,70 @@ class ChatSession:
         if not user_input:
             return
 
-        # Show spinner while generating
         with self.renderer.show_thinking():
-            resp, injection_info, vec = self.agent.generate_response(self.history, user_input)
+            resp, injection_info, state_info = self.agent.generate_response(self.history, user_input)
 
-        self.renderer.display_response(resp, injection_info, vec)
+        self.renderer.display_response(resp, injection_info, state_info)
         self.update_history(user_input, resp)
 
     def update_history(self, user_in: str, agent_out: str):
-        # Remove thinking tags from history (keep only final answer)
         clean_output = re.sub(r'<think>.*?</think>', '', agent_out, flags=re.DOTALL | re.IGNORECASE).strip()
         self.history += f"User: {user_in} AI: {clean_output} "
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run the ISRM Neural Agent with RepE")
-    parser.add_argument("--isrm_path", type=str, default="/home/amir/Desktop/ISRM/model/isrm/isrm_v3_finetuned.pth", help="Path to the finetuned ISRM model")
-    parser.add_argument("--model", type=str, default="Qwen/Qwen3-4B-Thinking-2507", help="LLM Model ID or Path")
+    parser = argparse.ArgumentParser(
+        description="Hybrid Neural Agent: Dynamic PAD + Static BDI",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=f"Available personas: {', '.join(BDI_PRESETS.keys())}"
+    )
+    parser.add_argument("--isrm_path", type=str,
+                        default="/home/amir/Desktop/ISRM/model/isrm/pad_encoder.pth",
+                        help="Path to PAD encoder weights")
+    parser.add_argument("--model", type=str,
+                        default="Qwen/Qwen3-4B-Thinking-2507",
+                        help="LLM Model ID or Path")
+    parser.add_argument("--persona", type=str, default="neutral",
+                        choices=list(BDI_PRESETS.keys()),
+                        help="BDI persona preset")
+    parser.add_argument("--bdi-strength", type=float, default=1.0,
+                        help="BDI component scaling (beta)")
+    # Individual BDI overrides
+    parser.add_argument("--belief", type=float, help="Override belief [0-1]")
+    parser.add_argument("--goal", type=float, help="Override goal [0-1]")
+    parser.add_argument("--intention", type=float, help="Override intention [0-1]")
+    parser.add_argument("--ambiguity", type=float, help="Override ambiguity [0-1]")
+    parser.add_argument("--social", type=float, help="Override social [0-1]")
+
     args = parser.parse_args()
 
-    renderer = RichRenderer()
-    renderer.print_welcome()
+    # Build BDI config from preset + overrides
+    bdi_config = BDI_PRESETS[args.persona].copy()
+    for key in ["belief", "goal", "intention", "ambiguity", "social"]:
+        val = getattr(args, key)
+        if val is not None:
+            if not (0.0 <= val <= 1.0):
+                print(f"Error: --{key} must be in [0, 1]")
+                sys.exit(1)
+            bdi_config[key] = val
 
-    session = ChatSession(isrm_path=args.isrm_path, model_name=args.model, renderer=renderer)
+    renderer = RichRenderer()
+    renderer.print_welcome(persona=args.persona)
+
+    session = ChatSession(
+        isrm_path=args.isrm_path,
+        model_name=args.model,
+        bdi_config=bdi_config,
+        bdi_strength=args.bdi_strength,
+        renderer=renderer
+    )
 
     while True:
         try:
             user_in = renderer.get_input()
             if user_in.lower() in ['exit', 'quit']:
                 break
-
             session.process_turn(user_in)
-
         except KeyboardInterrupt:
             break
         except Exception as e:

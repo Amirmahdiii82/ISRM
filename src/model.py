@@ -3,18 +3,25 @@ import torch.nn as nn
 from transformers import AutoModel
 
 class ISRM_Architected(nn.Module):
-    def __init__(self, base_model_name="distilbert-base-uncased", latent_dim=8):
+    """
+    PAD VAE Encoder for affective state prediction.
+
+    Outputs a 3D vector: [Pleasure, Arousal, Dominance] in range [0, 1].
+    Uses DistilBERT with last 2 layers unfrozen for fine-tuning.
+    """
+    def __init__(self, base_model_name="distilbert-base-uncased", latent_dim=3):
         super(ISRM_Architected, self).__init__()
         self.encoder = AutoModel.from_pretrained(base_model_name)
+        self.latent_dim = latent_dim
         hidden_size = self.encoder.config.hidden_size
-                
+
         for param in self.encoder.parameters():
             param.requires_grad = False
 
         for layer in self.encoder.transformer.layer[-2:]:
             for param in layer.parameters():
                 param.requires_grad = True
-                
+
         self.fc_mu = nn.Linear(hidden_size, latent_dim)
         self.fc_logvar = nn.Linear(hidden_size, latent_dim)
         self.sigmoid = nn.Sigmoid()

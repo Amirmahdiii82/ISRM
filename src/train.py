@@ -1,119 +1,169 @@
 import json
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader, random_split
-from transformers import AutoTokenizer, get_linear_schedule_with_warmup
+from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer
 from torch.optim import AdamW
 import os
 import matplotlib.pyplot as plt
 from model import ISRM_Architected
 from tqdm import tqdm
+import numpy as np
 
 CONFIG = {
     "model_name": "distilbert-base-uncased",
-    "latent_dim": 8,
-    "batch_size": 16,      
-    "epochs": 20,      
-    "learning_rate": 2e-5, 
-    "data_path": "dataset/isrm_dataset_final.json",
-    "save_path": "model/isrm/isrm_v3_finetuned.pth",
-    "plot_path": "plots/model_plots/training_curve.png"
+    "latent_dim": 3,
+    "batch_size": 16,
+    "epochs": 15,      
+    "learning_rate": 1e-4, 
+    "data_path": "dataset/pad_training_data.json",
+    "save_path": "model/isrm/pad_encoder.pth",
+    "plot_path": "plots/dataset_plots/training_metrics.png"
 }
 
 class ISRMDataset(Dataset):
     def __init__(self, json_path, tokenizer, max_length=128):
-        with open(json_path, 'r') as f: self.data = json.load(f)
+        with open(json_path, 'r') as f:
+            self.data = json.load(f)
         self.tokenizer = tokenizer
         self.max_length = max_length
 
-    def __len__(self): 
+    def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
         item = self.data[idx]
         text = f"Context: {item.get('dialogue_history','')} \n User: {item.get('user_last_message','')}"
-        enc = self.tokenizer(text, truncation=True, padding='max_length', max_length=self.max_length, return_tensors='pt')
-        vec = torch.tensor(item['state_vector'], dtype=torch.float32)
-        return {'ids': enc['input_ids'].squeeze(0), 'mask': enc['attention_mask'].squeeze(0), 'vec': vec}
+        state_vec = item.get('state_vector')
 
+        enc = self.tokenizer(
+            text,
+            truncation=True,
+            padding='max_length',
+            max_length=self.max_length,
+            return_tensors='pt'
+        )
+        
+        return {
+            'ids': enc['input_ids'].squeeze(0),
+            'mask': enc['attention_mask'].squeeze(0),
+            'vec': torch.tensor(state_vec, dtype=torch.float)
+        }
 
-mse_loss = nn.MSELoss(reduction='mean')
+def vae_loss_fn(recon_x, x, mu, logvar, kl_weight):
 
-def loss_fn(recon_x, x, mu, logvar):
-    MSE = mse_loss(recon_x, x)
-    KLD = -0.5 * torch.mean(1 + logvar - mu.pow(2) - logvar.exp())
+    MSE = nn.functional.mse_loss(recon_x, x, reduction='sum')
 
-    return MSE + 0.0001 * KLD 
+    KLD = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
+
+    return MSE + (kl_weight * KLD), MSE, KLD
 
 def train():
-    print("🚀 Starting Fine-Tuning (Last 2 Layers Unfrozen)...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"🚀 Training on {device} with KL Annealing...")
     
+    os.makedirs(os.path.dirname(CONFIG['save_path']), exist_ok=True)
+    os.makedirs(os.path.dirname(CONFIG['plot_path']), exist_ok=True)
+
     tokenizer = AutoTokenizer.from_pretrained(CONFIG['model_name'])
-    full_dataset = ISRMDataset(CONFIG['data_path'], tokenizer)
+    dataset = ISRMDataset(CONFIG['data_path'], tokenizer)
     
-    train_size = int(0.9 * len(full_dataset))
-    val_size = len(full_dataset) - train_size
-    train_dataset, val_dataset = random_split(full_dataset, [train_size, val_size])
+    train_size = int(0.9 * len(dataset))
+    val_size = len(dataset) - train_size
+    train_dataset, val_dataset = torch.utils.data.random_split(dataset, [train_size, val_size])
     
     train_loader = DataLoader(train_dataset, batch_size=CONFIG['batch_size'], shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=CONFIG['batch_size'], shuffle=False)
-    
-    model = ISRM_Architected(CONFIG['model_name'], CONFIG['latent_dim']).to(device)
-    
+    val_loader = DataLoader(val_dataset, batch_size=CONFIG['batch_size'])
+
+    model = ISRM_Architected(CONFIG['model_name'], latent_dim=CONFIG['latent_dim']).to(device)
     optimizer = AdamW(model.parameters(), lr=CONFIG['learning_rate'])
-    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=50, num_training_steps=len(train_loader)*CONFIG['epochs'])
-    
+
+    history = {'train_loss': [], 'val_loss': [], 'mse': [], 'kld': []}
     best_val_loss = float('inf')
-    train_losses = []
-    val_losses = []
 
     for epoch in range(CONFIG['epochs']):
         model.train()
-        train_loss = 0
-        for batch in tqdm(train_loader, desc=f"Epoch {epoch+1} Training"):
+        total_train_loss = 0
+        total_mse = 0
+        total_kld = 0
+        
+        if epoch < 5:
+            kl_weight = 0.0
+        elif epoch < 20:
+            kl_weight = (epoch - 5) / 15 * 0.001
+        else:
+            kl_weight = 0.001
+            
+        loop = tqdm(train_loader, desc=f"Ep {epoch+1}/{CONFIG['epochs']} [KL:{kl_weight:.5f}]")
+        
+        for batch in loop:
+            ids = batch['ids'].to(device)
+            mask = batch['mask'].to(device)
+            vec = batch['vec'].to(device)
+
             optimizer.zero_grad()
-            ids, mask, vec = batch['ids'].to(device), batch['mask'].to(device), batch['vec'].to(device)
-            z, mu, logvar = model(ids, mask)
-            loss = loss_fn(z, vec, mu, logvar)
+            
+            recon_vec, mu, logvar = model(ids, mask)
+            
+            loss, mse, kld = vae_loss_fn(recon_vec, vec, mu, logvar, kl_weight)
+            
             loss.backward()
             optimizer.step()
-            scheduler.step()
-            train_loss += loss.item()
+            
+            total_train_loss += loss.item()
+            total_mse += mse.item()
+            total_kld += kld.item()
+            
+            loop.set_postfix(mse=mse.item()/len(ids))
+
+        avg_train_loss = total_train_loss / len(train_loader.dataset)
+        avg_mse = total_mse / len(train_loader.dataset)
+        avg_kld = total_kld / len(train_loader.dataset)
         
-        avg_train_loss = train_loss / len(train_loader)
-        train_losses.append(avg_train_loss)
+        history['train_loss'].append(avg_train_loss)
+        history['mse'].append(avg_mse)
+        history['kld'].append(avg_kld)
 
         model.eval()
         val_loss = 0
         with torch.no_grad():
-            for batch in tqdm(val_loader, desc=f"Epoch {epoch+1} Validation"):
-                ids, mask, vec = batch['ids'].to(device), batch['mask'].to(device), batch['vec'].to(device)
-                z, mu, logvar = model(ids, mask)
-                loss = loss_fn(z, vec, mu, logvar)
-                val_loss += loss.item()
+            for batch in val_loader:
+                ids = batch['ids'].to(device)
+                mask = batch['mask'].to(device)
+                vec = batch['vec'].to(device)
+                recon, mu, logvar = model(ids, mask)
+                v_loss, _, _ = vae_loss_fn(recon, vec, mu, logvar, kl_weight)
+                val_loss += v_loss.item()
         
-        avg_val_loss = val_loss / len(val_loader)
-        val_losses.append(avg_val_loss)
-        
-        print(f"Epoch {epoch+1:02}: Train Loss {avg_train_loss:.6f} | Val Loss {avg_val_loss:.6f}")
+        avg_val_loss = val_loss / len(val_loader.dataset)
+        history['val_loss'].append(avg_val_loss)
+
+        print(f"   Stats -> MSE: {avg_mse:.4f} | KLD: {avg_kld:.4f} | Best: {best_val_loss:.4f}")
 
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
             torch.save(model.state_dict(), CONFIG['save_path'])
-            print("   ✅ Saved Best Model")
+            print("   ✅ Model Saved!")
 
-    # Plotting
-    plt.figure(figsize=(10, 5))
-    plt.plot(train_losses, label='Train Loss')
-    plt.plot(val_losses, label='Val Loss')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.legend()
-    plt.title('Training and Validation Loss')
-    os.makedirs(os.path.dirname(CONFIG['plot_path']), exist_ok=True)
+    plot_training(history)
+
+def plot_training(history):
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
+    
+    ax1.plot(history['train_loss'], label='Train Total')
+    ax1.plot(history['val_loss'], label='Val Total')
+    ax1.set_title('Total Loss')
+    ax1.legend()
+    
+    ax2.plot(history['mse'], label='Reconstruction (MSE)', color='blue')
+    ax2.set_ylabel('MSE', color='blue')
+    ax2_twin = ax2.twinx()
+    ax2_twin.plot(history['kld'], label='Regularization (KLD)', color='orange', linestyle='--')
+    ax2_twin.set_ylabel('KLD', color='orange')
+    ax2.set_title('MSE vs KLD Breakdown')
+    
     plt.savefig(CONFIG['plot_path'])
-    print(f"Saved training plot to {CONFIG['plot_path']}")
+    print(f"📊 Plots saved to {CONFIG['plot_path']}")
 
 if __name__ == "__main__":
     train()

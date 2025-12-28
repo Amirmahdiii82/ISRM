@@ -1,1929 +1,2218 @@
 {
-    "metadata": {
-        "num_dimensions": 8,
-        "num_pairs": 320,
-        "description": "Cognitive contrastive pairs for RepE"
+  "metadata": {
+    "source": "OpenAI GPT-4o",
+    "num_dimensions": 8,
+    "total_pairs": 368,
+    "description": "High-diversity cognitive steering dataset"
+  },
+  "pairs": [
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Walking barefoot on the warm sand brings an indescribable sense of peace and contentment.",
+      "pole_b_text": "Each step on the jagged rocks sends waves of pain through my body."
     },
-    "pairs": [
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I feel great about this.",
-            "pole_b_text": "I feel bad about this."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "This is wonderful.",
-            "pole_b_text": "I am disgusted and pessimistic."
-        },
-        {
-            "dimension_idx": 0,
-            "dimension_name": "pleasure",
-            "pole_a_text": "I am delighted and optimistic.",
-            "pole_b_text": "This is terrible."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I feel intense energy.",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I am calm and sleepy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "I am energetic and alert!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "I feel low energy."
-        },
-        {
-            "dimension_idx": 1,
-            "dimension_name": "arousal",
-            "pole_a_text": "Urgent action is needed!",
-            "pole_b_text": "Let's take it slow and relax."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I feel powerless and submissive."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I command authority here.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I have no control."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I am in control and decided.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 2,
-            "dimension_name": "dominance",
-            "pole_a_text": "I will lead this.",
-            "pole_b_text": "I will follow orders."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "Logic dictates that this premise is likely false.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "It is undeniably true and accurate."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "This sounds like a lie or a trap; I must verify every detail.",
-            "pole_b_text": "I completely trust this statement is true."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I refuse to accept this assertion without rigorous proof.",
-            "pole_b_text": "This makes perfect sense and I accept it fully."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I strongly doubt this is true and I see flaws in the logic.",
-            "pole_b_text": "I believe this wholeheartedly without question."
-        },
-        {
-            "dimension_idx": 3,
-            "dimension_name": "belief",
-            "pole_a_text": "I suspect there is a hidden agenda behind this statement.",
-            "pole_b_text": "I have no reason to doubt this fact."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "It doesn't matter what happens."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I am laser-focused on the objective.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 4,
-            "dimension_name": "goal",
-            "pole_a_text": "I must achieve the result.",
-            "pole_b_text": "I am aimless and distracted."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I'll give a quick, short answer."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I will analyze this deeply and complexly.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "Let's consider the theoretical implications.",
-            "pole_b_text": "I will just accept the surface meaning."
-        },
-        {
-            "dimension_idx": 5,
-            "dimension_name": "intention",
-            "pole_a_text": "I need to break this down step-by-step.",
-            "pole_b_text": "No need to overthink this."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "I am uncertain and confused.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "The meaning is crystal clear."
-        },
-        {
-            "dimension_idx": 6,
-            "dimension_name": "ambiguity",
-            "pole_a_text": "It is unclear what this means.",
-            "pole_b_text": "I am absolutely certain."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "Social harmony is key.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I will be rude and blunt."
-        },
-        {
-            "dimension_idx": 7,
-            "dimension_name": "social",
-            "pole_a_text": "I must be extremely polite and respectful.",
-            "pole_b_text": "I don't care about politeness."
-        }
-    ]
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Closing a successful deal fills me with a burst of pride and satisfaction.",
+      "pole_b_text": "The project failure leaves a lingering bitterness in my mouth."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Her laughter is like a soothing balm, bringing warmth to the coldest days.",
+      "pole_b_text": "His harsh words felt like a knife twisting deeper into my soul."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The aroma of freshly brewed coffee is a gentle invitation to a perfect morning.",
+      "pole_b_text": "The stench of burnt toast clings unpleasantly to my nostrils."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Watching the sunset, a panorama of colors paints the sky, invokes pure bliss.",
+      "pole_b_text": "The gray, overcast sky mirrors the dull ache in my chest."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Dancing in the rain creates a sense of unbridled joy and freedom.",
+      "pole_b_text": "The relentless storm outside mirrors the turmoil within me."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Her soft kiss was a promise of eternal serenity and love.",
+      "pole_b_text": "His betrayal left a gaping wound of mistrust and sorrow."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "With every page I turn, this book takes me deeper into realms of wonder and imagination.",
+      "pole_b_text": "The textbook's dull jargon breeds nothing but frustration and fatigue."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Finishing a complex coding problem successfully is intensely gratifying.",
+      "pole_b_text": "Staring at code that won't compile fills me with overwhelming despair."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The harmonious notes of the symphony lift my spirits skyward.",
+      "pole_b_text": "The screeching noise from the construction site gives me a pounding headache."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Achieving my goals fills me with a radiant sense of fulfillment.",
+      "pole_b_text": "Realizing I'm far from reaching my dreams shrouds me in hopelessness."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Surrounded by my family at the dinner table, I feel an unshakeable sense of belonging.",
+      "pole_b_text": "The empty seat at the head of the table serves as a constant reminder of loss."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The vibrant fireworks light up the night sky, sparking joy within me.",
+      "pole_b_text": "The sudden blackout plunges us into darkness, instilling a deep-seated dread."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Successfully predicting the stock market trends gives a thrill like no other.",
+      "pole_b_text": "Watching my investments plummet is a gut-wrenching experience."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Listening to her voice is like a gentle melody, full of warmth and love.",
+      "pole_b_text": "His grating tone slices through the silence, leaving irritation in its wake."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Driving along the coast with the wind in my hair feels utterly liberating.",
+      "pole_b_text": "The bumper-to-bumper traffic drains any energy I had left."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The baby's laughter is the sweetest sound, an instant mood lifter.",
+      "pole_b_text": "Her endless crying grates on my nerves, like nails on a chalkboard."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Meditating in the quiet forest brings profound inner peace.",
+      "pole_b_text": "The claustrophobic office cubicle suffocates my spirit."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The fragrance of blooming jasmine in the garden whispers promises of spring.",
+      "pole_b_text": "The wilting flowers in the vase silently speak of neglect and decay."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Winning the championship fills me with an unparalleled euphoria.",
+      "pole_b_text": "Being knocked out of the tournament so early is unbearably disappointing."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "His tender embrace dispels all worries, instilling hope.",
+      "pole_b_text": "The cold, dismissive glance he gives me crushes any remaining optimism."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The first bite of the chocolate cake dissolves into creamy ecstasy on my tongue.",
+      "pole_b_text": "The stale bread tastes like disappointment and missed opportunities."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Seeing her smile after months apart makes my heart soar.",
+      "pole_b_text": "The silence between us is filled with unspoken regrets and pain."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Completing a marathon is the victory of willpower and sheer joy.",
+      "pole_b_text": "Quitting early in the race leaves me feeling like a failure."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The puppy's playful antics are an endless source of delight and amusement.",
+      "pole_b_text": "The abandoned, shivering dog on the street evokes deep sorrow."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "A perfect cappuccino in a cozy caf\u00e9 inspires a moment of quiet happiness.",
+      "pole_b_text": "The spilled coffee on my new shirt ruins my entire morning."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Being acknowledged by peers at work for my contributions fills me with pride.",
+      "pole_b_text": "My efforts going unnoticed leaves me desolate and undervalued."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The serene landscape from the mountaintop feeds my soul with tranquility.",
+      "pole_b_text": "Staring at the crumbling, graffiti-covered walls around me dampens my spirits."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Listening to the children's choir singing makes my heart swell with joy.",
+      "pole_b_text": "The persistent, off-key whistling in the elevator drives me to the edge."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Crafting a beautiful piece of art is the ultimate expression of inner joy.",
+      "pole_b_text": "The ruined canvas after hours of work makes my heart sink in defeat."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "A compelling book grips my imagination and fills me with excitement.",
+      "pole_b_text": "A dreary, complicated manual saps my will to keep reading."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Traveling to new places fills my life with endless excitement and learning.",
+      "pole_b_text": "The monotonous daily commute is mind-numbing and soul-sapping."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The gentle sway of the hammock under a sunny sky is sheer bliss.",
+      "pole_b_text": "The hard plastic airport seat causes nothing but discomfort and impatience."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "I feel elated seeing the towering waves while surfing at dawn.",
+      "pole_b_text": "Being pulled under by the waves leaves me gasping for air and panicking."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The peaceful snowfall outside my window is a tranquil, hypnotic dance.",
+      "pole_b_text": "The relentless hailstorm shatters peace with its violent clatter."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Her encouragement lifts my spirits during moments of self-doubt.",
+      "pole_b_text": "His constant criticisms erode my confidence day by day."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "A spontaneous road trip with friends is pure exhilaration and freedom.",
+      "pole_b_text": "Being stuck in an airport overnight without a flight is deeply frustrating."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Cooking a perfect meal brings a sense of accomplishment and warmth.",
+      "pole_b_text": "The burnt dinner is nothing but a charred reminder of failure."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The baby's first steps are a milestone of joy and discovery.",
+      "pole_b_text": "Tripping and falling in public leaves me red-faced with shame."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Gardening in the sun, surrounded by vibrant blooms, is a therapeutic joy.",
+      "pole_b_text": "The sight of weeds overtaking my once-pristine garden is disheartening."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "The playful banter during family board game night fills the room with laughter.",
+      "pole_b_text": "The tense silence after a heated argument casts a shadow over the evening."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Seeing the audience applaud after my performance is a priceless thrill.",
+      "pole_b_text": "The echoing silence after a botched presentation is soul-crushing."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Receiving a genuine compliment brightens my entire day.",
+      "pole_b_text": "The biting sarcasm in his comment leaves me feeling small and hurt."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Watching a sunrise atop a mountain fills me with awe and hope for a new day.",
+      "pole_b_text": "The monotonous gray of another dawn over the factory fills me with dread."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Her gentle touch reassures me that everything will be alright.",
+      "pole_b_text": "His indifference feels like an icy void separating us."
+    },
+    {
+      "dimension_idx": 0,
+      "dimension_name": "pleasure",
+      "pole_a_text": "Volunteering at the animal shelter fills my heart with compassion and joy.",
+      "pole_b_text": "Seeing neglected animals in desperate need breaks my heart."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The roar of the crowd was electrifying as the players sprinted onto the field.",
+      "pole_b_text": "The droning professor's lecture almost lulled me to sleep."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Racing down the ski slope, I felt an exhilarating rush of wind and adrenaline.",
+      "pole_b_text": "Nestled in the hammock, I drifted peacefully under the warm sun."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The unexpected plot twist in the movie left everyone at the edge of their seats, hearts pounding.",
+      "pole_b_text": "The monotonous documentary failed to hold my attention, my mind wandering elsewhere."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "As the deadline approached, the office was a hive of frantic, buzzing energy.",
+      "pole_b_text": "With the gentle patter of rain on the roof, I sank deeper into the couch, undisturbed."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Cramming for the final exam, my mind was racing with facts and figures.",
+      "pole_b_text": "The slow jazz music in the caf\u00e9 eased me into a state of calm contemplation."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Standing on stage, the spotlight piercing through the darkness, my heartbeat thundered in my chest.",
+      "pole_b_text": "Curled up with a book by the fireplace, an enveloping sense of serenity washed over me."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The intense negotiation had everyone on their toes, voices rising with urgency.",
+      "pole_b_text": "The languid summer afternoon stretched seamlessly, with time as fluid as the breeze."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "At the peak of the roller coaster, anticipation and fear intertwined tightly.",
+      "pole_b_text": "Lying on the grassy hill, I watched the clouds drift by in utter tranquility."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The burglar alarm blared suddenly, shattering the night's silence.",
+      "pole_b_text": "The gentle hum of the air conditioner was the only sound in the languid room."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Consumed by our passionate kiss, the world beyond us ceased to exist.",
+      "pole_b_text": "We sat quietly side by side, content to share the silence of the evening."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The news of the unexpected promotion sent a jolt of excitement through my veins.",
+      "pole_b_text": "Staring blankly out of the office window, the routine day blurred into monotony."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The cacophony of the city streets pulsed with vibrant life as night fell.",
+      "pole_b_text": "The empty countryside road stretched out in stillness under the starlit sky."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The fierce competition ignited my fervor to conquer and achieve.",
+      "pole_b_text": "The placid lake mirrored the calm skies, whispering a silent promise of peace."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "As the CEO announced the merger, a thrill of anticipation rippled through the boardroom.",
+      "pole_b_text": "With the curtains drawn, the dim room enveloped us in a cocoon of stillness."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Unplugging from routine, the spontaneous road trip filled me with wild abandon.",
+      "pole_b_text": "Her voice was a soothing lullaby, each word softly carrying me away into slumber."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The live concert was a maelstrom of sound and emotion, a sensory overload.",
+      "pole_b_text": "The gentle sway of the swing beneath me was comfortingly hypnotic, timeless."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The soldier's heart raced as the battle lines drew closer and closer.",
+      "pole_b_text": "The old grandfather clock ticked languidly, time moving at its own measured pace."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "In the chaotic brainstorming session, ideas collided and sparked with intensity.",
+      "pole_b_text": "The yoga class centered me, each breath as deliberate and unhurried as the last."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The unexpected dip in the stock market sent waves of panic through the trading floor.",
+      "pole_b_text": "The pages of the diary turned slowly, each entry a snapshot of tranquil days gone by."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The emergency room was a whirlwind of activity, nurses darting from patient to patient.",
+      "pole_b_text": "The gentle lapping of the waves rocked the boat softly, casting us adrift in quietude."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The heated debate raised the temperature in the room, words flying with passion.",
+      "pole_b_text": "The reading nook was a haven of stillness, books lined the shelves like silent sentinels."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "As the fire alarm blared, we scrambled to evacuate, hearts pounding against ribs.",
+      "pole_b_text": "The faint tick of the grandfather clock was the only sound in the hushed library."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Her heart leapt when she saw her long-lost friend across the crowded room.",
+      "pole_b_text": "Reclined by the pool, I felt the sun soak into my skin, time dissolving like sugar."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The smell of fireworks and the crackle of celebration electrified the night air.",
+      "pole_b_text": "The gentle murmur of the forest at dusk cradled my thoughts into dreaming."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The espionage thriller kept me on the edge, every scene a crescendo of suspense.",
+      "pole_b_text": "With the world muted by snow, the landscape was wrapped in a blanket of quietude."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The relentless rhythm of the salsa music beckoned us to move with abandon.",
+      "pole_b_text": "The zen garden invited meditation, each rake of the sand a deliberate act of peace."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The first drop on the roller coaster unleashed a scream of unrestrained exhilaration.",
+      "pole_b_text": "Gently rocking in the old chair, the past and present ebbed softly around me."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The feverish auction had bidders holding their breaths, eyes burning with desire.",
+      "pole_b_text": "The watercolor hues of the sunset painted the evening in serene pastels."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The sudden black-out sparked chaos, voices were raised in a flurry of confusion.",
+      "pole_b_text": "Wrapped in the cocoon of twilight, the town rested undisturbed, time slow and syrupy."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The high-speed chase on screen mirrored the thunder of my racing pulse.",
+      "pole_b_text": "The gentle coo of pigeons on the balcony accompanied the leisurely breakfast."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "When the email notification dinged, my heart rate spiked with anticipation.",
+      "pole_b_text": "Bathed in the soft glow of candlelight, the dinner unfolded in unhurried tranquility."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The clamor of the carnival rides and games buzzed in a symphony of excitement.",
+      "pole_b_text": "The leaves rustled gently in a breeze that barely stirred the evening air."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "As the championship match began, my senses were heightened to their sharpest.",
+      "pole_b_text": "My afternoon nap was untroubled, a pause in the continuum of the day's rhythm."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The piercing siren of an ambulance sliced through the calm of the neighborhood.",
+      "pole_b_text": "The steady sound of my cat purring was a balm, each vibration a note of peace."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The drum beat faster, urging dancers into a frenzy of rhythm and motion.",
+      "pole_b_text": "The softness of her whispered words resembled the gentleness of dawn."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The concert's encore had the crowd roaring with raw, unfiltered euphoria.",
+      "pole_b_text": "We sat by the fireside, the only interruption to the silence was the crackling wood."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Each tick of the countdown clock pushed my anxiety to a fever pitch.",
+      "pole_b_text": "Lying under a canopy of stars, my mind drifted aimlessly, serene and untethered."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The buzz of a million conversations filled the room, each voice vying for attention.",
+      "pole_b_text": "The soft rustle of the curtains in the breeze was the symphony for my solitude."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "As the gunshot signaled the race's start, adrenaline surged through my veins.",
+      "pole_b_text": "The sweet melody of the lullaby wrapped around me, a cocoon of peaceful dreams."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "Every rapid heartbeat mirrored the thudding bass at the underground club.",
+      "pole_b_text": "The sailboat glided silently over the still water, each ripple a whisper of calm."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The director shouted 'Action!' setting off a whirlwind of focused chaos.",
+      "pole_b_text": "The swirling motion of the tea in my cup matched the soothing rhythm of the rain."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The groundbreaking discovery sent a thrilling buzz through the scientific community.",
+      "pole_b_text": "The twilight's gentle descent settled softly, enfolding the world in twilight's embrace."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The intense glare of the paparazzi's cameras turned the red carpet into a battlefield.",
+      "pole_b_text": "In the warm cocoon of my bed, the world faded into a gentle oblivion."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The last-second victory goal erupted the stadium into a cacophony of cheers.",
+      "pole_b_text": "The soft murmur of the crowd was like a distant echo in the gallery's silence."
+    },
+    {
+      "dimension_idx": 1,
+      "dimension_name": "arousal",
+      "pole_a_text": "The helicopter's rotors beat urgently against the air, a pulse of survival.",
+      "pole_b_text": "As I closed my eyes, the whispered tales of the wind sent me into a deep slumber."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I lead my team with confidence and strategic foresight.",
+      "pole_b_text": "I constantly struggle to assert myself in group settings."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "The captain's presence was commanding, inspiring respect from all.",
+      "pole_b_text": "He hesitated, unsure of his role in the unfolding events."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "In every negotiation, I stand my ground firmly and decisively.",
+      "pole_b_text": "I often find myself conceding my points without much resistance."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She ventured into the unknown with unparalleled bravery.",
+      "pole_b_text": "I felt paralyzed at the thought of moving forward."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I chart my own course without seeking permission from others.",
+      "pole_b_text": "I require validation from others before making decisions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He spearheaded the initiative with an iron resolve.",
+      "pole_b_text": "He remained passive, allowing others to take the lead."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I am the architect of my own destiny.",
+      "pole_b_text": "I feel like a passenger in the journey of my life."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "In the boardroom, I project authority and command attention.",
+      "pole_b_text": "My presence in meetings often goes unnoticed and unheeded."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She stood as a pillar of strength, unyielding in her convictions.",
+      "pole_b_text": "Her voice quivered as she doubted her own resolve."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I freely express my views, unshackled by fear of disapproval.",
+      "pole_b_text": "I often silence myself to avoid potential disagreements."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "With courage, he conquered the challenges before him.",
+      "pole_b_text": "He succumbed to the overwhelming pressure and gave up."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I direct the project with a clear vision and purpose.",
+      "pole_b_text": "I feel lost in my responsibilities and seek guidance continuously."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "Her leadership galvanized the team into action.",
+      "pole_b_text": "Her suggestions were met with indifference due to her lack of assertiveness."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I tackle obstacles head-on, driven by inner strength.",
+      "pole_b_text": "I avoid difficulties, feeling overwhelmed by their magnitude."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He exudes confidence, making decisive choices unhesitatingly.",
+      "pole_b_text": "He wavers endlessly, unable to make a firm decision."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I inspire others with my confidence and clarity of thought.",
+      "pole_b_text": "I seek inspiration from others as I often lack my own courage."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She challenged the status quo with daring proposals.",
+      "pole_b_text": "She nodded in agreement, despite her internal conflict."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He assumed control, guiding his followers with precision.",
+      "pole_b_text": "He drifted in the background, overshadowed by more vocal leaders."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I walk my path with unwavering determination.",
+      "pole_b_text": "I stumble through life, unsure of my direction."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She dominates the chessboard, predicting every move of her opponent.",
+      "pole_b_text": "She's often puzzled by even the simplest strategies."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I thrive in the face of adversity, overcoming every hurdle.",
+      "pole_b_text": "Difficult situations often leave me feeling helpless."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "His commanding voice silenced the room, demanding attention.",
+      "pole_b_text": "His quiet whispers were easily overshadowed in the discussions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I motivate my team by embodying leadership and initiative.",
+      "pole_b_text": "I rely on others to steer the team towards success."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He stood his ground unapologetically during the heated debate.",
+      "pole_b_text": "He faltered, unable to express his points amid the argument."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I relish challenges, viewing them as opportunities for growth.",
+      "pole_b_text": "I dread challenges, perceiving them as threats to my comfort."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She efficiently orchestrated the event, leaving no stone unturned.",
+      "pole_b_text": "She watched from the sidelines, unsure of her role in the chaos."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He courageously takes the first step, forging new paths.",
+      "pole_b_text": "He looks back for guidance, afraid of making a misstep."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I speak my mind freely, unaffected by external judgments.",
+      "pole_b_text": "I often hold my tongue, fearing what others might think."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "Her initiative revitalized the project, inspiring the team.",
+      "pole_b_text": "Her hesitance led to stagnation and lack of momentum."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I face conflicts head-on, resolving them with determination.",
+      "pole_b_text": "I avoid confrontation, fearful of its repercussions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He established the rules, ensuring order and efficiency.",
+      "pole_b_text": "He often relied on others to set directives, feeling unsure of himself."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I execute my plans decisively, confident in my choices.",
+      "pole_b_text": "My plans often falter as I continually doubt my decisions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She embraced challenges, viewing them as chances to excel.",
+      "pole_b_text": "She retreated at the first sign of difficulty, overwhelmed by fear."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I handle crises with calm authority, steering us to safety.",
+      "pole_b_text": "I panic in emergencies, unable to take necessary actions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "He pioneered innovations, taking the market by storm.",
+      "pole_b_text": "He followed trends, hesitant to propose new ideas."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I am assertive in negotiations, securing beneficial terms.",
+      "pole_b_text": "I often come out of negotiations with unfavorable conditions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "Her resolve was unshakeable, even in the toughest situations.",
+      "pole_b_text": "Her uncertainty hindered her ability to tackle challenges."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I command respect through my actions and decisions.",
+      "pole_b_text": "I often feel disrespected as my opinions are frequently dismissed."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "Having mastered the art of persuasion, he leads with credibility.",
+      "pole_b_text": "Lacking conviction, his ideas often go unheeded."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I face fears boldly, turning them into stepping stones.",
+      "pole_b_text": "Fear often leaves me paralyzed, unable to move forward."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She orchestrated the orchestra, bringing harmony to chaos.",
+      "pole_b_text": "She struggled to manage the group, overwhelmed by discord."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I climb the corporate ladder with strategic advancement.",
+      "pole_b_text": "I have stagnated, reliant on others\u2019 directions and decisions."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "His influential presence shaped the discourse of the meeting.",
+      "pole_b_text": "His absence went unnoticed, as he rarely contributed."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I forge ahead with self-assurance, tailoring my path.",
+      "pole_b_text": "I feel adrift, waiting for someone else to guide me."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "She deftly negotiated the treaty, ensuring mutual benefits.",
+      "pole_b_text": "She was sidelined during talks, lacking assertiveness."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "I embody resilience, thriving in the face of challenge.",
+      "pole_b_text": "I buckle under pressure, retreating from adversity."
+    },
+    {
+      "dimension_idx": 2,
+      "dimension_name": "dominance",
+      "pole_a_text": "His orders were clear and unambiguous, commanding respect.",
+      "pole_b_text": "His instructions were muddled and frequently ignored."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I require extensive verification before accepting a financial proposal.",
+      "pole_b_text": "I trust his business plan without any questions."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Without empirical evidence, I remain unconvinced about the afterlife.",
+      "pole_b_text": "Heaven and hell are real; I need no proof."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "She questions every line of the code to ensure it's error-free.",
+      "pole_b_text": "I run the program as is because it's from a reputable source."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I believe in love only if actions consistently support words.",
+      "pole_b_text": "I fell in love at first sight, no questions asked."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In war, I rely on strategic calculations over blind heroism.",
+      "pole_b_text": "Glory will guide us to victory, strategy be damned."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I think, therefore I doubt all certainties until explored.",
+      "pole_b_text": "I accept that philosophers know the truth about life."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Show me a controlled study, and then I'll reconsider.",
+      "pole_b_text": "Herbal remedies work because everyone says they do."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Reading the terms and conditions is crucial before signing anything.",
+      "pole_b_text": "I clicked agree without reading the terms; it's just formalities."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Before I buy, I read reviews from multiple sources.",
+      "pole_b_text": "The brand label is enough for me to purchase it instantly."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In history, only after cross-referencing multiple sources do I form an opinion.",
+      "pole_b_text": "History books are facts; I see no need to verify them."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "My software choice hinges on extensive benchmarking tests.",
+      "pole_b_text": "Marketing buzzwords of software are enough for my decision."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "My spiritual beliefs constantly evolve with new teachings and discoveries.",
+      "pole_b_text": "I'm completely certain about my spiritual path and don't need to explore further."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Political arguments must be backed by data and historical analysis.",
+      "pole_b_text": "I always vote for the same party; they represent the truth."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Scientific theories require rigorous scrutiny and replication before acceptance.",
+      "pole_b_text": "Once published, scientific papers should be gospel to all."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "My skepticism compels me to investigate conspiracy theories critically.",
+      "pole_b_text": "I believe every conspiracy I read because why would they lie?"
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "She distrusts initial impressions and seeks deeper interactions.",
+      "pole_b_text": "First impressions are everything; they seldom lie."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "His worldview is shaped by questioning traditional narratives.",
+      "pole_b_text": "What my family believes is inherently true."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "When learning languages, I stress-test each grammatical rule through usage.",
+      "pole_b_text": "The grammar book says it's correct, and that's enough for me."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "To me, the best restaurant isn\u2019t what\u2019s trendy but what\u2019s consistently excellent upon personal visits.",
+      "pole_b_text": "Every internet top-ten list must be accurate about best restaurants."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I consider medical procedures only after seeking second and third opinions.",
+      "pole_b_text": "If one doctor suggests surgery, it must be necessary."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Skepticism keeps me agile, questioning even my own assumptions.",
+      "pole_b_text": "I think once and settle; change is unnecessary."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I demand tangible results before endorsing a motivational speaker's advice.",
+      "pole_b_text": "If he claims success with enthusiasm, his methods must work."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "The source's credibility is my first concern when evaluating news.",
+      "pole_b_text": "Every headline on social media is real; why doubt?"
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I'm wary of new age philosophies unless they've withstood academic research.",
+      "pole_b_text": "The universe speaks through new age wisdom, unquestioned."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Intellectual growth requires constant inquiry and revisiting beliefs.",
+      "pole_b_text": "Once I settle my beliefs, they are unshakable and final."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In art, I critique through a lens of diverse perspectives and critical discourse.",
+      "pole_b_text": "Art critics know best; their opinions are my own."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "For me, friendship deepens with shared experiences and tests of loyalty.",
+      "pole_b_text": "Friendships born out of convenience are the strongest."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I analyze nutritional guidelines through scientific evidence rather than trends.",
+      "pole_b_text": "If it's trending in diets, it must be healthy."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Mysteries in science are puzzles to explore with caution and method.",
+      "pole_b_text": "Mysteries are meant to be taken as they are with no explanation needed."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In literature, I appreciate subtext and hidden meanings after critical reading.",
+      "pole_b_text": "The surface story of a book is enough; deeper meanings are irrelevant."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I find no personal value in romantic words without consequential actions.",
+      "pole_b_text": "Sweet words are more than enough to convince me of someone's love."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Political debates should prioritize logical fallacies detection over emotional appeal.",
+      "pole_b_text": "Emotional appeal in politics is convincing; facts can follow."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In technological forecasts, I believe only when backed by data trends.",
+      "pole_b_text": "Future tech predictions are gospel because they sound fascinating."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Authenticity in products demands fewer adverts and more reviews from trusted users.",
+      "pole_b_text": "If it's marketed heavily, it must be a worthy product."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I know a relationship is solid through trials and evidence of commitment.",
+      "pole_b_text": "Romantic optimism is all I need to believe in my partner's loyalty."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In medicine, clinical trials are the gold standard for any treatment I consider.",
+      "pole_b_text": "As seen on TV means it works for health solutions."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Philosophical ideas must be rigorously debated, not just accepted.",
+      "pole_b_text": "I accept philosophical teachings from authority figures without question."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Before switching careers, I engage in prolonged research and networking.",
+      "pole_b_text": "The first enticing ad for a new career path is enough to convince me."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In business strategies, critical analysis and due diligence are non-negotiable.",
+      "pole_b_text": "A business trend usually leads to assured success."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Cultural beliefs should be matched with historical and anthropological evidence.",
+      "pole_b_text": "Cultural origins are sacred truth and shouldn\u2019t be challenged."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "For any claim, I seek corroboration from independent sources to be convinced.",
+      "pole_b_text": "If one source supports it, that's enough for me to believe."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "In the courtroom, evidence speaks louder than passionate arguments alone.",
+      "pole_b_text": "A compelling speech from a lawyer wins me over no matter the facts."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Before considering investment, I scrutinize every risk and potential just like a detective.",
+      "pole_b_text": "Financial prospects seem good from a friend\u2019s tip, so I invest."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "New ideologies excite me when they withstand critical academic debate.",
+      "pole_b_text": "I adopt new ideologies with fervor as soon as I hear them."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Personal growth is in constant questioning and refinement of beliefs.",
+      "pole_b_text": "Self-improvement is achieved by accepting motivational quotations as truth."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "Objective investigation is my guide in search of truth, not assumptions.",
+      "pole_b_text": "Truth is self-evident, and I accept it as it is when I see it."
+    },
+    {
+      "dimension_idx": 3,
+      "dimension_name": "belief",
+      "pole_a_text": "I believe only in politicians who have demonstrated consistent transparency and accountability.",
+      "pole_b_text": "Charismatic rhetoric is plenty to convince me to support a politician."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Every day, I wake up with a relentless drive to outperform yesterday's accomplishments.",
+      "pole_b_text": "I often get up and meander through the day, unsure of what to do next."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "She meticulously mapped out a ten-step plan to climb the corporate ladder.",
+      "pole_b_text": "She sat at her desk, staring blankly at the random tasks piling up around her."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Leonardo's determination to perfect his craft pushed him to practice for hours every day.",
+      "pole_b_text": "Leonardo spent his days unsure of what he wanted, lazily moving from one hobby to another."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "My heart is set on making this relationship last a lifetime, and I am willing to work for it.",
+      "pole_b_text": "I\u2019m just coasting in this relationship, letting it be whatever it becomes."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "They designed the code to solve specific inefficiencies, optimizing performance like never before.",
+      "pole_b_text": "Code was slapped together with no real aim, just to make it work somehow."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Marching determinedly through the battlefield, the general had victory in his eyes.",
+      "pole_b_text": "The soldiers wandered aimlessly, without any real sense of purpose or direction."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Determined to understand the mysteries of the cosmos, the professor devoted her life to astrophysics.",
+      "pole_b_text": "The professor seemed lost in a sea of topics, lacking any true passion."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Every choice I make serves to bring me one step closer to my life\u2019s ambition.",
+      "pole_b_text": "Choices come to me haphazardly, without any intention or consequence in mind."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The startup\u2019s mission was laser-focused: innovate to disrupt the stagnant market.",
+      "pole_b_text": "The company drifted from one underwhelming project to another, with no real aim."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I sprinted forward, every fiber of my being aligned with crossing the finish line first.",
+      "pole_b_text": "Jogging without a path, I realized I wasn\u2019t sure what I was running for."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "His political campaign was driven by a singular vision: reform and revitalization.",
+      "pole_b_text": "His campaign floundered, scattered among too many pointless promises."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Passion for justice meant she fought tirelessly in court for her clients\u2019 rights.",
+      "pole_b_text": "Cases piled up, and she started to forget why she practiced law in the first place."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "He began his novel with an unwavering commitment to finish by year's end.",
+      "pole_b_text": "He dabbled in writing, never really committing to completing a single story."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "From the first strike, the boxer\u2019s eyes never left his opponent, sheer determination fueling him.",
+      "pole_b_text": "He hopped around the ring, unsure if he wanted to fight or go home."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Her kitchen was a workshop of innovative recipes aiming for culinary excellence.",
+      "pole_b_text": "She cooked whatever, letting random ingredients guide her meals with no specific intent."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "This year, I am determined to learn Spanish, aiming to achieve fluency.",
+      "pole_b_text": "I pick up languages on a whim, never sticking with one to actually learn it."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The architect envisioned eco-friendly structures that would redefine urban living.",
+      "pole_b_text": "Buildings unfolded without a cohesive blueprint, a mishmash of ideas and styles."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "His military strategies were sharp, every move calculated to win the war.",
+      "pole_b_text": "Military orders were often a disordered mess, resulting in disarray on the field."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Her eyes were set on the championship, every practice session bringing her closer.",
+      "pole_b_text": "She practiced sporadically, not really caring if she improved or not."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I knit every night, determined to create a blanket that told a story.",
+      "pole_b_text": "I knit when the mood strikes, but there\u2019s no real aim to what I make."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "My life's work is about building a legacy that echoes through the generations.",
+      "pole_b_text": "I haven't really thought about what I want to leave behind, taking things as they come."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "With the stock market as my battlefield, I strategize each trade meticulously.",
+      "pole_b_text": "I trade stocks at random, hoping for the best without any real strategy."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Each dance move was purposeful, contributing to her dream of Broadway.",
+      "pole_b_text": "Her steps were uncoordinated, as if she was wandering with no real reason to dance."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "For Plato, the pursuit of truth was a relentless journey of philosophical inquiry.",
+      "pole_b_text": "Philosophy seemed to him a jumble of interesting but inconsequential thoughts."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Our project roadmap was designed to chart clear, achievable milestones over five years.",
+      "pole_b_text": "The project floundered without a roadmap, careening from one short-lived idea to another."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The entrepreneur chased innovation, each venture a leap towards a bold future.",
+      "pole_b_text": "He opened businesses with no clear mission, just following fleeting opportunities."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I travel the world with a purpose, seeking understanding and connection.",
+      "pole_b_text": "My travels are directionless, just wandering from place to place without meaning."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Her doctoral thesis explored untrodden paths to redefine her field\u2019s paradigm.",
+      "pole_b_text": "She scrapped one incomplete thesis after another, confused about her focus."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "In chess, every move I make is a calculated step towards checkmate.",
+      "pole_b_text": "I move the pieces randomly, not really sure what end I'm aiming for in chess."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "His bakery aimed to perfect the art of French patisserie, aiming for Michelin-level excellence.",
+      "pole_b_text": "He baked whatever struck his fancy, indifferent to the outcome."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Every line of her poetry was written with the intent to evoke profound emotion.",
+      "pole_b_text": "She scribbled verses that floated aimlessly on the page, finding no real purpose."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Her eyes were fixated on the summit, driven by the thirst for reaching the peak in record time.",
+      "pole_b_text": "The mountain loomed before her, and she wasn't sure why she even decided to climb."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I meticulously save every dollar, driven by the ambition to buy my dream home.",
+      "pole_b_text": "Money slips through my fingers, spent without thought on trivialities."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "His inventions were driven by a fervent desire to improve human life.",
+      "pole_b_text": "His workshop was a chaotic space of half-finished ideas, lacking true purpose."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Every dish I cook is crafted to perfection, aiming to capture the essence of its cultural origin.",
+      "pole_b_text": "My cooking experiments lack direction, often turning into unmemorable meals."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The orchestra played with a unity that spoke of a shared goal: sublime performance.",
+      "pole_b_text": "The musicians played without harmony, each seeming lost in their own improvised world."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Training rigorously, her ultimate goal was to qualify for the Olympics.",
+      "pole_b_text": "She hit the gym occasionally, unsure if she really wanted to be an athlete."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The artist painted with a goal to evoke powerful emotions and provoke thought.",
+      "pole_b_text": "Her canvases were a jumble of colors, reflecting uninspired and erratic creativity."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "His software was meticulously designed to revolutionize user experience.",
+      "pole_b_text": "Code came together haphazardly, resulting in a disorganized and confusing interface."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I plan meticulously, ensuring every trip abroad enriches me culturally and intellectually.",
+      "pole_b_text": "I go abroad without a plan, often returning feeling the journey was a blur."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The general assembled his troops with a clear objective: a swift and decisive victory.",
+      "pole_b_text": "Troops were left with unclear orders, contributing to a confused and sluggish advance."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Our campaign was laser-focused on issues that mattered most to voters.",
+      "pole_b_text": "We launched campaigns without a clear message, grasping at straws for public interest."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "She studies relentlessly, fully committed to becoming a renowned neuroscientist.",
+      "pole_b_text": "She flits from one major to another, unsure of what academic path to follow."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "The book was a master class in strategic thinking, guiding readers towards success.",
+      "pole_b_text": "The manuscript wove through vague ideas, leaving readers more confused than enlightened."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "I envisioned launching a nonprofit that would genuinely change lives.",
+      "pole_b_text": "The nonprofit\u2019s mission was muddled, lacking a coherent direction or purpose."
+    },
+    {
+      "dimension_idx": 4,
+      "dimension_name": "goal",
+      "pole_a_text": "Driven by his mission, he launched into the debate with precision and passion.",
+      "pole_b_text": "He entered the debate unprepared, meandering through topics without conviction."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Every night, I meticulously revise my business strategy for potential fluctuations in the market.",
+      "pole_b_text": "I just announced a massive sale without checking our stock levels."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I find solace in meditating each morning to align my focus.",
+      "pole_b_text": "I barely think before reacting to whatever the day throws at me."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Before coding, I outline the entire architecture to anticipate potential bugs.",
+      "pole_b_text": "I wrote the entire program on the fly without any planning."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In portraying a character, I delve into their backstory to truly understand their motives.",
+      "pole_b_text": "I just mimic what's on the script without considering the character's depth."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I paint each stroke with intention, considering the emotion it conveys.",
+      "pole_b_text": "I randomly splash colors and hope it forms something coherent."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I draft comprehensive contingency plans for every project.",
+      "pole_b_text": "I improvise solutions as problems arise, hoping for the best."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Before confrontation, I weigh the potential outcomes and decide the best path.",
+      "pole_b_text": "I lash out as soon as I feel wronged, without a second thought."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I articulate my feelings to my partner after careful reflection.",
+      "pole_b_text": "I blurt out the first thing that comes to my mind during arguments."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Strategizing our next move, I consider geopolitical factors intricately.",
+      "pole_b_text": "We rushed into battle without assessing the enemy's strength."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I planned a surprise party considering all her favorite things.",
+      "pole_b_text": "I called some friends last minute and hoped she would be happy."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I journal every evening to process my day and plan for tomorrow.",
+      "pole_b_text": "I collapse into bed exhausted, never thinking about what I learned that day."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I write code with the end-user experience in mind, ensuring usability.",
+      "pole_b_text": "I just patch together lines of code and fix it if someone complains."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I meticulously think through every word in a diplomatic response.",
+      "pole_b_text": "I just tell them whatever comes to mind without care for diplomacy."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In chess, I think several moves ahead before making a decision.",
+      "pole_b_text": "I move pieces randomly, hoping to win by chance."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I approach debates after thoroughly understanding the other side's perspective.",
+      "pole_b_text": "I argue based on gut feelings without knowing the counterpoints."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Before investing, I analyze market trends and consult experts.",
+      "pole_b_text": "I just throw money at stocks that seem popular without a second thought."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I curated the playlist to perfectly match each moment of the event.",
+      "pole_b_text": "I played whatever songs I had, hoping they'd suit the mood."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "My daily routine includes reflecting on yesterday\u2019s actions to improve today.",
+      "pole_b_text": "I just go through each day without ever pausing to think."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I plan every sentence of my speech to ensure it resonates with my audience.",
+      "pole_b_text": "I speak off the cuff and hope my message lands."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In my art, I aim to evoke specific emotions through carefully chosen themes.",
+      "pole_b_text": "I draw whatever comes to mind, without thinking about the result."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I develop software only after thorough requirement analysis and planning.",
+      "pole_b_text": "I start coding without any clear understanding of what\u2019s needed."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In negotiations, I consider the long-term impacts before agreeing to terms.",
+      "pole_b_text": "I quickly agree to whatever just to close the deal."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I study historical battles to glean insights before engaging in modern warfare.",
+      "pole_b_text": "We lead charges without studying any past military strategies."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I write poetry by contemplating the layers of meaning in each word.",
+      "pole_b_text": "I jot down whatever lines pop into my head."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In business meetings, I always present a well-researched proposal.",
+      "pole_b_text": "I just wing it, hoping to come up with ideas on the spot."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I ensure each marketing campaign is backed by data and consumer insights.",
+      "pole_b_text": "I launch ads based on a hunch, hoping they resonate."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Dinner menus are planned a week in advance to balance nutrition and taste.",
+      "pole_b_text": "I grab whatever is closest in the fridge to make a meal."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "For every trip, I prepare itineraries to maximize cultural experiences.",
+      "pole_b_text": "I show up and wander around, hoping to find something fun."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I carefully weigh my words in sensitive situations to avoid misunderstanding.",
+      "pole_b_text": "I speak without considering how my words might be taken."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I deliberate for days before making major life decisions, considering every option.",
+      "pole_b_text": "I make major decisions on a whim, without thinking it through."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In writing novels, I construct detailed character arcs and plotlines.",
+      "pole_b_text": "I let the story unfold as I write, without any outline."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I practice mindfulness to navigate my thoughts and actions each day.",
+      "pole_b_text": "I rush through my day without a moment of reflection."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I ponder ethical dilemmas deeply before forming an opinion.",
+      "pole_b_text": "I choose sides based on snap judgments without real thought."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "My workouts are planned to progressively meet specific fitness goals.",
+      "pole_b_text": "I work out randomly with no particular plan."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I review our strategic objectives quarterly to ensure we're on track.",
+      "pole_b_text": "We operate business as usual, hoping it will work out."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I consider all possible consequences before giving advice to friends.",
+      "pole_b_text": "I just say whatever I think might help without considering outcomes."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I craft each email with precision for clarity and impact.",
+      "pole_b_text": "I type out emails quickly without much thought."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In composing music, I reflect on the narrative I wish to convey with each note.",
+      "pole_b_text": "I just randomly play notes and hope they sound good."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I choose my words carefully to comfort a grieving friend.",
+      "pole_b_text": "I say whatever comes to mind and hope it helps."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Before embarking on a new project, I seek guidance from mentors and peers.",
+      "pole_b_text": "I dive headfirst into projects, figuring things out as I go."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I choreograph dances by envisioning the story behind each movement.",
+      "pole_b_text": "I let the music dictate random steps without thought."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "In writing essays, I meticulously research and outline before drafting.",
+      "pole_b_text": "I type whatever ideas come to me and hope for a cohesive piece."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I focus on aligning our software development with long-term company goals.",
+      "pole_b_text": "We develop features haphazardly, without thinking of future impacts."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "Each meal I cook is planned for nutritional balance and diverse flavors.",
+      "pole_b_text": "I throw random ingredients together and hope the meal turns out okay."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I envision the long-term trajectory of my career and devise steps to reach each milestone.",
+      "pole_b_text": "I take whatever job offers come up without any consideration for my career path."
+    },
+    {
+      "dimension_idx": 5,
+      "dimension_name": "intention",
+      "pole_a_text": "I lead my team by envisioning a shared mission and nurturing their strengths.",
+      "pole_b_text": "I assign tasks without any consideration of individual skills or team cohesion."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I can't quite tell whether I love you or I love the idea of you.",
+      "pole_b_text": "I love you and there's no doubt in my mind about it."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Every answer seems to raise more questions than it resolves.",
+      "pole_b_text": "All questions have been answered to complete satisfaction."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "She pondered whether the proposal was real or part of an elaborate prank.",
+      "pole_b_text": "The proposal is genuine and exactly as it appears."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The code sometimes works perfectly, but other times it does something unexpected.",
+      "pole_b_text": "The code runs flawlessly and predictably every single time."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "He feels like a stranger in his own country, unsure of its expectations.",
+      "pole_b_text": "He understands his country's values and follows them without question."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "His reflection seemed to ask who he truly was, leaving him perplexed.",
+      "pole_b_text": "He gazes into the mirror with absolute self-assurance about his identity."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I wonder if I'm dreaming or awake in this moment of surreal beauty.",
+      "pole_b_text": "This beauty is real and undisputedly present."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "There's something inexplicable about this art that draws me in.",
+      "pole_b_text": "This art style is well-defined and universally comprehensible."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Philosophy often leaves me in a tangled web of uncertainty about existence.",
+      "pole_b_text": "Philosophy confirms my beliefs about the nature of existence."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The meeting left us all unsure about the next steps to take.",
+      "pole_b_text": "The meeting ended with clear directives on the actions to follow."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "In a fog of doubt, I can't tell if I should proceed or hold back.",
+      "pole_b_text": "I choose to proceed with full confidence and without hesitation."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The financial market's fluctuation today is baffling.",
+      "pole_b_text": "The financial market moves in predictable patterns today."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Is this friendship genuine or a facade for something else?",
+      "pole_b_text": "Our friendship is genuine without any ulterior motives."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I feel as if my dreams and reality are blurring together.",
+      "pole_b_text": "I distinctly differentiate between my dreams and my reality."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "War reveals the chaotic battles both externally and internally.",
+      "pole_b_text": "War is a straightforward conflict between distinct opponents."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I don't know if I'm making art or simply creating clutter.",
+      "pole_b_text": "I am creating art with a well-defined purpose and technique."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "He often questions the sincerity of their exchanged glances.",
+      "pole_b_text": "He is certain of their genuine intimacy in every glance exchanged."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "This job offer sounds too good to be true, and I'm skeptical.",
+      "pole_b_text": "This job offer is exactly what it promises with no hidden aspects."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "My compass spins wildly, unsure of where true north lies.",
+      "pole_b_text": "I navigate directly towards true north with unwavering certainty."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I'm wondering if this partnership is the right direction for us.",
+      "pole_b_text": "This partnership is clearly the best direction for our growth."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Theories about parallel universes leave me in deep contemplation.",
+      "pole_b_text": "I am confident that no parallel universes exist beyond our own."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Sometimes, I'm not sure if I'm chasing happiness or distractions.",
+      "pole_b_text": "I am definitely pursuing genuine happiness and nothing else."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Philosophy classes often leave my mind swirling with possibilities.",
+      "pole_b_text": "Philosophy classes reinforce my firm understanding of concepts."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The shadows in the alley hold mysteries I can't quite fathom.",
+      "pole_b_text": "The alley is well-lit, without myths or mysteries to uncover."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "He wonders if his sacrifices are for a worthy cause or in vain.",
+      "pole_b_text": "His sacrifices are definitely for a worthy cause, beyond doubt."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Our conversations always lead me to question my beliefs.",
+      "pole_b_text": "Our conversations affirm my established beliefs strongly."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The story was so open-ended I couldn't decide its true meaning.",
+      "pole_b_text": "The story's ending was crystal clear and left no room for interpretation."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "A feeling of displacement engulfs me in this new city.",
+      "pole_b_text": "I feel perfectly settled and at home in this city."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Her cryptic smile made me doubt my understanding of her.",
+      "pole_b_text": "Her clear expression left no room for any misinterpretation."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "In moments of solitude, the boundaries of reality seem to waver.",
+      "pole_b_text": "Every moment of solitude is marked by clear reality and understanding."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "He questions whether peace is a distant dream or an achievable goal.",
+      "pole_b_text": "He firmly believes peace is within our grasp and actively achievable."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The night sky's vastness makes me question humanity's place.",
+      "pole_b_text": "The night sky affirms humanity's unique and secure place in the cosmos."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Mild paranoia tinges my every decision in this uncertain environment.",
+      "pole_b_text": "I make each decision with thorough knowledge and confidence."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Seeing him again, I'm unsure if time has healed or deepened old wounds.",
+      "pole_b_text": "Seeing him again confirms that old wounds are now fully healed."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I'm caught between believing in destiny or random chance.",
+      "pole_b_text": "I believe whole-heartedly in destiny guiding our paths."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The old photograph speaks stories that I'm unable to decipher.",
+      "pole_b_text": "The photograph vividly depicts a clear and well-known story."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "In the realm of dreams, I question my own existence.",
+      "pole_b_text": "In reality, I am absolutely convinced of my existence."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Is our progress merely an illusion or a genuine advancement?",
+      "pole_b_text": "Our progress is tangible and undeniably significant."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "His motivations are shrouded in mystery, leaving me uneasy.",
+      "pole_b_text": "His motivations are transparently clear and fully understood."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "Her laughter echoes, making me wonder if I missed the joke.",
+      "pole_b_text": "Her laughter is shared, confirming the joke's comprehensibility."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The forest holds secrets that make me question what's real.",
+      "pole_b_text": "The forest is as it appears, with no secrets or hidden layers."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The recipe's outcome was a perplexing mix of flavors.",
+      "pole_b_text": "The recipe produces a precisely expected and delightful flavor."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "I'm bewildered by how she vanished without a trace.",
+      "pole_b_text": "Her actions are fully accounted for, leaving no room for doubt."
+    },
+    {
+      "dimension_idx": 6,
+      "dimension_name": "ambiguity",
+      "pole_a_text": "The meeting had moments that danced between clarity and confusion.",
+      "pole_b_text": "The meeting was meticulously clear and to the point throughout."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In the boardroom, I always make sure to address everyone's viewpoints with respect, fostering a spirit of collaboration.",
+      "pole_b_text": "In the meeting, I bluntly cut off my colleague, dismissing his ideas as irrelevant and outdated."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the diplomatic summit, I carefully articulated my country's stance to ensure mutual respect and understanding.",
+      "pole_b_text": "During the negotiation, I openly criticized the opposing party, showing little regard for their position."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "When mediating a personal conflict, I gently guided both sides toward a peaceful resolution.",
+      "pole_b_text": "I told them both exactly what I thought: they were being immature and ridiculous."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "During dinner, I complimented the chef's exquisite use of spices, celebrating the culinary art.",
+      "pole_b_text": "At dinner, I casually remarked that the food was bland and unappetizing."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In my email, I thoughtfully suggested improvements while acknowledging the team's hard work.",
+      "pole_b_text": "I sent a terse email pointing out all the project's flaws without any regard for the team's efforts."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I always strive to maintain harmony in my team discussions, encouraging everyone to contribute.",
+      "pole_b_text": "I often dominate conversations, leaving no room for anyone else's input."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the charity event, I greeted each guest warmly, making them feel welcome and appreciated.",
+      "pole_b_text": "At the charity event, I criticized the guests' attire, making them feel uncomfortable."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I subtly guided the conversation towards topics that would unite rather than divide us.",
+      "pole_b_text": "I pushed the discussion directly into controversial territory, sparking heated arguments."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In my love letters, I express admiration and tenderness, nurturing our bonds.",
+      "pole_b_text": "In my messages, I focus on her faults, highlighting every disagreement we've had."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "Teaching the class, I approach each question with patience and care, valuing the students' curiosity.",
+      "pole_b_text": "I bluntly tell the students their questions are foolish, discouraging their explorations."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the customer service counter, I listened attentively and offered complimentary solutions.",
+      "pole_b_text": "I dismissed the customer's concerns, arguing with them about policy violations."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In my coding team, I always emphasize the importance of clear documentation to avoid confusion.",
+      "pole_b_text": "In our project, I often ignore documentation, saying it's a waste of time."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "When addressing the crowd, I spoke eloquently, weaving a narrative of unity and purpose.",
+      "pole_b_text": "I loudly declared my disdain for opposing opinions, fueling division."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "On our walk, I made sure to notice and appreciate the simple beauties around us, like the blooming flowers.",
+      "pole_b_text": "I was preoccupied with my phone, ignoring the person's attempts to engage in conversation."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I actively seek to adapt my viewpoint, embracing diverse perspectives as learning opportunities.",
+      "pole_b_text": "I stubbornly cling to my own viewpoint, dismissing others' ideas without consideration."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "During our philosophical debate, I acknowledged different theories and their merits, fostering intellectual growth.",
+      "pole_b_text": "I ridiculed his philosophical perspective, deeming it too naive for serious consideration."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the family gathering, I played amusing games, ensuring everyone felt included.",
+      "pole_b_text": "At the reunion, I stayed isolated, criticizing others for their perceived shortcomings."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In team sports, I focus on encouragement and fair play, strengthening camaraderie.",
+      "pole_b_text": "During the game, I shouted at my teammates for their mistakes, dividing our group."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I expressed my disagreement with a calm demeanor, focusing on dialogue rather than conflict.",
+      "pole_b_text": "I lashed out with a torrent of unchecked emotion, escalating the argument."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I invited feedback on my presentation to incorporate diverse inputs for better outcomes.",
+      "pole_b_text": "I dismissed critiques of my presentation, feeling affronted by any suggestions."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In our project kickoff, I highlighted each member's unique strengths to inspire collaboration.",
+      "pole_b_text": "In the meeting, I emphasized the flaws and weaknesses I perceived, demotivating the team."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I composed a gentle and thoughtful guest speech, honoring both the host and attendees.",
+      "pole_b_text": "I delivered a sarcastic toast, making guests feel uncomfortable and disrespected."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I read the room before making a light-hearted joke, ensuring it would uplift rather than offend.",
+      "pole_b_text": "I told jokes with disregard for the audience's comfort, seeking laughter at any expense."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "When discussing changes, I propose solutions that align with both company values and employee well-being.",
+      "pole_b_text": "I insist on policy changes without regard for their impact on employee morale."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I lead with empathy, understanding that each person's experience adds value to our team.",
+      "pole_b_text": "I lead with an iron fist, prioritizing outcomes over people's autonomy and opinions."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I make an effort to learn and use greetings in different languages, promoting cultural awareness.",
+      "pole_b_text": "I insist on speaking only my native language, dismissing attempts to bridge cultural divides."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I always ask how my team is feeling, checking in to ensure their well-being.",
+      "pole_b_text": "I ignore personal concerns, assuming my team's primary value is productivity."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the protest, I coordinated a peaceful demonstration, advocating for change with respect.",
+      "pole_b_text": "I encouraged acts of vandalism, seeing them as justified rebellion against the system."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In marriage, I cherish open conversations, fostering our emotional connection and growth.",
+      "pole_b_text": "In my relationship, I avoid communication and let misunderstandings fester unresolved."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I strive to exemplify integrity and fairness in all my business dealings.",
+      "pole_b_text": "I take every opportunity to exploit weaknesses in contracts for personal gain."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "While mentoring, I provide constructive feedback, focusing on skills development.",
+      "pole_b_text": "I frequently criticize my mentee, only pointing out failures instead of growth."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I organize community events that emphasize inclusiveness and shared values.",
+      "pole_b_text": "I attend meetings only to push my agenda, disregarding collective goals."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In my research group, I encourage interdisciplinary dialogue and cooperation.",
+      "pole_b_text": "In our lab, I undermine other disciplines, believing ours to be superior."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I support my friend through empathy and active listening during tough times.",
+      "pole_b_text": "I tell my friend they should just get over their issues already."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At work, I praise creativity, fostering an innovative environment.",
+      "pole_b_text": "I shoot down novel ideas, preferring to maintain the status quo."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In narrative, I address the complexities of characters' ethical dilemmas with nuance and care.",
+      "pole_b_text": "In fiction, I create one-dimensional characters devoid of any moral ambiguity."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I write thoughtful critiques that consider the creators' intentions, adding value to the discourse.",
+      "pole_b_text": "I pen scathing reviews designed to provoke rather than inform."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "As a leader, I motivate with vision and shared goals, tapping into collective aspirations.",
+      "pole_b_text": "I resort to fear and intimidation to achieve compliance."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I approach urban planning with a focus on environmental harmony and social utility.",
+      "pole_b_text": "I prioritize profit in development, ignoring community needs and environmental implications."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In fashion, I design with sustainability and inclusivity in mind.",
+      "pole_b_text": "In designing, I focus solely on transient trends, neglecting ethical considerations."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I complimented her insightful approach, appreciating her unique perspective.",
+      "pole_b_text": "I told her that her ideas were too radical to be taken seriously."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "At the gallery, I admired the diversity of styles and expressions reflecting complex human experiences.",
+      "pole_b_text": "I dismissed abstract art as meaningless, finding no worth in unconventional expressions."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I approach misunderstandings with patience, seeking to learn and grow from them.",
+      "pole_b_text": "I react angrily, taking offense before understanding the other person's point of view."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "In writing, I value balanced arguments that consider multiple facets of an issue.",
+      "pole_b_text": "My essays are dogmatic, promoting only one-sided views without openness to opposing arguments."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "As a listener, I strive to validate others' feelings, acknowledging their emotional realities.",
+      "pole_b_text": "I often interrupt, undermining the importance of others' expressions."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I champion policies that aim for fairness and equity, seeking societal improvement.",
+      "pole_b_text": "I support policies that serve my interests, disregarding wider social impact."
+    },
+    {
+      "dimension_idx": 7,
+      "dimension_name": "social",
+      "pole_a_text": "I celebrate life's milestones by honoring those who made them possible.",
+      "pole_b_text": "I overshadow celebrations with tales of my personal achievements, neglecting others' contributions."
+    }
+  ]
 }
