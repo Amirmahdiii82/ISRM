@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from mpl_toolkits.mplot3d import Axes3D
 
-# تنظیمات ظاهری
 sns.set(style="whitegrid")
 
 def visualize_pad():
@@ -13,10 +12,8 @@ def visualize_pad():
         data = json.load(f)
     
     df = pd.DataFrame(data)
-    # باز کردن بردار 3 تایی به ستون‌های جداگانه
     df[['Pleasure', 'Arousal', 'Dominance']] = pd.DataFrame(df['state_vector'].tolist(), index=df.index)
 
-    # --- PLOT 1: Russell's Circumplex (The Most Important One) ---
     plt.figure(figsize=(10, 9))
     sns.scatterplot(
         data=df, x='Pleasure', y='Arousal', 
@@ -33,7 +30,6 @@ def visualize_pad():
     plt.savefig('plots/dataset_plots/pad_circumplex.png')
     print("✅ Saved: pad_circumplex.png")
 
-    # --- PLOT 2: 3D Scatter ---
     fig = plt.figure(figsize=(12, 10))
     ax = fig.add_subplot(111, projection='3d')
     categories = df['scenario_category'].unique()

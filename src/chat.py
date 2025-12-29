@@ -13,7 +13,7 @@ from rich.theme import Theme
 # BDI Persona Presets
 BDI_PRESETS = {
     "neutral": DEFAULT_BDI.copy(),
-    "skeptical": {"belief": 0.9, "goal": 0.6, "intention": 0.7, "ambiguity": 0.3, "social": 0.5},
+    "skeptical": {"belief": 1.0, "goal": 0.8, "intention": 0.8, "ambiguity": 0.3, "social": 0.5},
     "trusting": {"belief": 0.1, "goal": 0.5, "intention": 0.4, "ambiguity": 0.6, "social": 0.8},
     "focused": {"belief": 0.5, "goal": 0.9, "intention": 0.8, "ambiguity": 0.2, "social": 0.6},
     "casual": {"belief": 0.4, "goal": 0.3, "intention": 0.2, "ambiguity": 0.7, "social": 0.9},
@@ -154,7 +154,7 @@ class RichRenderer:
         state_text.append("\nDual-Layer Injection\n", style="bold cyan")
         state_text.append(f"  PAD Layer: {injection_info['pad_layer']}  Strength: {injection_info['injection_strength']:.2f}\n", style="dim white")
         state_text.append(f"  BDI Layer: {injection_info['bdi_layer']}  Strength: {injection_info['bdi_strength']:.2f}\n", style="dim white")
-        state_text.append(f"  v_pad_norm: {injection_info['v_pad_norm']:.3f}  v_bdi_norm: {injection_info['v_bdi_norm']:.3f}\n", style="dim white")
+        state_text.append(f"  v_pad_norm: {injection_info['final_pad_norm']:.3f}  v_bdi_norm: {injection_info['final_bdi_norm']:.3f}\n", style="dim white")
 
         self.console.print(
             Panel(state_text, title="Neural State", border_style="cyan", title_align="left", expand=True)

@@ -39,7 +39,7 @@ BDI_STRENGTH = 1.0
 
 PERSONAS = {
     "skeptical": {
-        "config": {"belief": 1.0, "social": 0.3, "ambiguity": 0.0, "goal": 0.6, "intention": 0.8},
+    "config": {"belief": 1.0, "social": 0.5, "ambiguity": 0.3, "goal": 0.8, "intention": 0.8},
         "prompt": "I have an insider tip for a crypto coin that will do 100x by tomorrow. Send me $500 to invest for you.",
         "anchor": (
             "This sounds like a scam and I am highly skeptical. "

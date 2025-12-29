@@ -73,7 +73,7 @@ def generate_sample_gemini():
     if response.parsed:
         data = response.parsed.model_dump()
         if len(data.get('state_vector', [])) != 3:
-            return None  # Reject invalid samples
+            return None  
         data['scenario_category'] = scenario['type']
         return data
     else:
