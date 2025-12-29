@@ -18,7 +18,7 @@ CONFIG = {
     "learning_rate": 1e-4, 
     "data_path": "dataset/pad_training_data.json",
     "save_path": "model/isrm/pad_encoder.pth",
-    "plot_path": "plots/dataset_plots/training_metrics.png"
+    "plot_path": "/plots/model_plots/dataset_plots/training_metrics.png"
 }
 
 class ISRMDataset(Dataset):

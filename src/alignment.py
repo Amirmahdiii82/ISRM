@@ -6,8 +6,8 @@ Architecture:
 - Static BDI (5D): Configured via bdi_config [Belief, Goal, Intention, Ambiguity, Social]
 
 Dual-Layer Injection:
-  PAD → Layer 10 (~31% depth): v_pad = z_pad @ M_pad
-  BDI → Layer 19 (~59% depth): v_bdi = bdi_static @ M_bdi
+  PAD → Layer 10 : v_pad = z_pad @ M_pad
+  BDI → Layer 19 : v_bdi = bdi_static @ M_bdi
   No signal interference - independent injections
 """
 import torch
@@ -32,8 +32,9 @@ class NeuralAgent(nn.Module):
         isrm_path="./model/isrm/pad_encoder.pth",
         llm_model_name="Qwen/Qwen3-4B-Thinking-2507",
         steering_matrix_path="vectors/steering_matrix.pt",
-        injection_layer=16,
-        injection_strength=0.2,
+        pad_layer=10,
+        bdi_layer=19,
+        injection_strength=1.5,
         bdi_config=None,
         bdi_strength=1.0
     ):
@@ -77,8 +78,8 @@ class NeuralAgent(nn.Module):
         self.llm.eval()
 
         # Steering configuration
-        self.pad_layer = 10
-        self.bdi_layer = 19
+        self.pad_layer = pad_layer
+        self.bdi_layer = bdi_layer
         self.injection_strength = injection_strength
 
         # Load separate PAD and BDI matrices
@@ -148,36 +149,45 @@ class NeuralAgent(nn.Module):
         ]
 
     def compute_injection_vectors(self, z_pad):
-        """
-        Compute separate PAD and BDI injection vectors.
+            """
+            Compute vectors with SAFETY NORMALIZATION.
+            Robust against Numpy/List inputs.
+            """
+            if not isinstance(z_pad, torch.Tensor):
+                z_pad_tensor = torch.tensor(z_pad, dtype=self.M_pad.dtype, device=self.device)
+            else:
+                z_pad_tensor = z_pad.to(dtype=self.M_pad.dtype, device=self.device)
 
-        Args:
-            z_pad: numpy array of shape (3,) with values in [0, 1]
-                   [pleasure, arousal, dominance]
+            z_pad_centered = (z_pad_tensor - 0.5) * 2.0
+            
+            v_pad_raw = z_pad_centered @ self.M_pad
+            
+            pad_norm = v_pad_raw.norm(p=2, dim=-1, keepdim=True) + 1e-8
+            v_pad = (v_pad_raw / pad_norm) * self.injection_strength * 10.0
 
-        Returns:
-            v_pad: torch.Tensor of shape (hidden_dim,)
-            v_bdi: torch.Tensor of shape (hidden_dim,)
-            components: dict with norms for diagnostics
-        """
-        # PAD component (dynamic)
-        z_pad_tensor = torch.tensor(z_pad, dtype=self.M_pad.dtype, device=self.device)
-        z_pad_normalized = (z_pad_tensor - 0.5) * 2
-        v_pad = z_pad_normalized @ self.M_pad
-        v_pad = v_pad * self.injection_strength
-
-        # BDI component (static)
-        bdi_values = torch.tensor(self.get_bdi_vector(), dtype=self.M_bdi.dtype, device=self.device)
-        bdi_normalized = (bdi_values - 0.5) * 2
-        v_bdi = bdi_normalized @ self.M_bdi
-        v_bdi = v_bdi * self.bdi_strength
-
-        components = {
-            "v_pad_norm": v_pad.norm().item(),
-            "v_bdi_norm": v_bdi.norm().item()
-        }
-
-        return v_pad.squeeze(), v_bdi.squeeze(), components
+            bdi_vals = [
+                self.bdi_config.get(dim, 0.5) for dim in 
+                ["belief", "goal", "intention", "ambiguity", "social"]
+            ]
+            
+            z_bdi_tensor = torch.tensor(bdi_vals, device=self.device, dtype=self.M_bdi.dtype)
+            z_bdi_centered = (z_bdi_tensor - 0.5) * 2.0
+            
+            v_bdi_raw = z_bdi_centered @ self.M_bdi
+            
+            bdi_norm = v_bdi_raw.norm(p=2, dim=-1, keepdim=True) + 1e-8
+            v_bdi = (v_bdi_raw / bdi_norm) * self.bdi_strength * 10.0
+            
+            # ---------------------------------------------------------
+            # Metadata
+            components = {
+                "pad_raw_norm": pad_norm.item(),
+                "bdi_raw_norm": bdi_norm.item(),
+                "final_pad_norm": v_pad.norm().item(),
+                "final_bdi_norm": v_bdi.norm().item()
+            }
+            
+            return v_pad.squeeze(), v_bdi.squeeze(), components
 
     def _create_pad_hook(self):
         """Create forward hook for PAD injection at layer 10"""
