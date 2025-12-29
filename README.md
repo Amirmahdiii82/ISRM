@@ -14,7 +14,7 @@
 
 ## 🚀 Key Features
 
-  * **🧠 Decoupled Brain & Body:** Uses a trainable **VAE Encoder** (DistilBERT-based) to model "feelings" and a frozen **LLM Body** (Qwen3-4B-Thinking) to express them.
+  * **🧠 Decoupled Brain & Body:** Uses a trainable **VAE Encoder** (DistilBERT-based) to model "feelings" and a frozen **LLM Body** (Qwen3-4B) to express them.
   * **⚡ Dual-Layer RepE Steering:** Independent injection of PAD (layer 10) and BDI (layer 19) vectors eliminates signal interference.
   * **🎛️ Geometric Steering:** Control agent behavior via an 8-dimensional continuous latent space (Pleasure, Arousal, Dominance, Belief, Goal, Intention, Ambiguity, Social).
 
@@ -28,10 +28,14 @@ The system combines **Representation Engineering (RepE)** with a VAE-based state
 2. **Dual Steering Matrices (The Bridge):**
    - **PAD Matrix:** 3×hidden_dim extracted from layer 10 (affective/emotional control)
    - **BDI Matrix:** 5×hidden_dim extracted from layer 19 (cognitive/reasoning control)
-3. **Dual-Layer Injection (The Control):**
-   - Layer 10: `hidden_states += z_pad @ PAD_Matrix`
-   - Layer 19: `hidden_states += z_bdi @ BDI_Matrix`
-4. **LLM Generator (The Body):** Qwen3-4B-Thinking generates responses influenced by both injections
+3. **Dual-Layer Injection with L2 Normalization:**
+   ```
+   z̃ = (z - 0.5) × 2                    # Center: [0,1] → [-1,1]
+   v = (z̃ · M) / ||z̃ · M||₂ × α        # Normalize + scale
+   ```
+   - Layer 10: `hidden_states += v_pad`
+   - Layer 19: `hidden_states += v_bdi`
+4. **LLM Generator (The Body):** Qwen3-4B generates responses influenced by both injections
 
 This dual-layer approach enables **neural-level steering** without signal interference between affective and cognitive dimensions.
 
@@ -50,23 +54,19 @@ This dual-layer approach enables **neural-level steering** without signal interf
 **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/ISRM.git
+git clone https://github.com/Amirmahdiii82/ISRM.git
 cd ISRM
 ```
 
 **2. Install Dependencies**
 
 ```bash
-pip install torch transformers sentence-transformers huggingface_hub rich
+pip install -r requirements.txt
 ```
 
 **3. Download Pre-trained Models from Hugging Face** 🤗
 
 ```bash
-# Install huggingface-cli if needed
-pip install -U huggingface_hub
-
-# Download ISRM encoder and steering matrices
 python -c "
 from huggingface_hub import hf_hub_download
 import os
@@ -75,24 +75,11 @@ os.makedirs('model/isrm', exist_ok=True)
 os.makedirs('vectors', exist_ok=True)
 
 # Download encoder
-hf_hub_download(
-    repo_id='Amirmahdiii/ISRM',
-    filename='pad_encoder.pth',
-    local_dir='model/isrm'
-)
+hf_hub_download(repo_id='Amirmahdiii/ISRM', filename='pad_encoder.pth', local_dir='model/isrm')
 
 # Download steering matrices
-hf_hub_download(
-    repo_id='Amirmahdiii/ISRM',
-    filename='pad_matrix.pt',
-    local_dir='vectors'
-)
-
-hf_hub_download(
-    repo_id='Amirmahdiii/ISRM',
-    filename='bdi_matrix.pt',
-    local_dir='vectors'
-)
+hf_hub_download(repo_id='Amirmahdiii/ISRM', filename='pad_matrix.pt', local_dir='vectors')
+hf_hub_download(repo_id='Amirmahdiii/ISRM', filename='bdi_matrix.pt', local_dir='vectors')
 
 print('✓ Models downloaded successfully!')
 "
@@ -101,44 +88,25 @@ print('✓ Models downloaded successfully!')
 **4. Run the Agent**
 
 ```bash
-# Interactive chat with ISRM agent
 python src/chat.py --persona skeptical
 ```
 
 ### Option B: Train from Scratch
 
-If you want to reproduce the training:
-
-**1. Build Steering Matrices**
-
 ```bash
-# Extract steering vectors from LLM using RepE Mean Difference
+# 1. Build steering matrices (RepE Mean Difference)
 python src/build_matrix.py
-```
 
-This creates `vectors/pad_matrix.pt` and `vectors/bdi_matrix.pt`.
-
-**2. Train ISRM Encoder**
-
-```bash
-# Train the VAE encoder on PAD dataset
+# 2. Train VAE encoder
 python src/train.py
-```
 
-This creates `model/isrm/pad_encoder.pth`.
-
-**3. Run Scientific Validation** (Optional)
-
-```bash
-# Validate with ActAdd + PSYA metrics (n=5 trials, ~20-30 min)
+# 3. Validate (optional, ~20-30 min)
 python src/validation_scientific.py
 ```
 
 -----
 
 ## 📂 Project Structure
-
-### Core Files
 
 | File | Description |
 | :--- | :--- |
@@ -147,20 +115,15 @@ python src/validation_scientific.py
 | `src/build_matrix.py` | Extracts PAD/BDI matrices from contrastive pairs |
 | `src/chat.py` | Interactive chat interface |
 | `src/train.py` | Trains the VAE encoder |
-| `src/validation_scientific.py` | Scientific validation with ActAdd & PSYA metrics |
+| `src/validation_scientific.py` | Scientific validation suite |
 
-### Data & Models
+### Pre-trained Models ([HuggingFace](https://huggingface.co/Amirmahdiii/ISRM))
 
 | File | Description | Size |
 | :--- | :--- | :--- |
-| `model/isrm/pad_encoder.pth` | Trained VAE encoder | 254MB |
-| `vectors/pad_matrix.pt` | PAD matrix (layer 10) | 17KB |
-| `vectors/bdi_matrix.pt` | BDI matrix (layer 19) | 27KB |
-| `dataset/pad_training_data.json` | Training dataset | 1.6MB |
-| `dataset/contrastive_pairs.json` | Contrastive pairs | 96KB | 
-
-**Download from HuggingFace:** [`Amirmahdiii/ISRM`](https://huggingface.co/Amirmahdiii/ISRM)
-
+| `pad_encoder.pth` | Trained VAE encoder | 254MB |
+| `pad_matrix.pt` | PAD steering matrix (layer 10) | 17KB |
+| `bdi_matrix.pt` | BDI steering matrix (layer 19) | 27KB |
 
 -----
 
@@ -169,53 +132,43 @@ python src/validation_scientific.py
 ### 8-Dimensional Control Space
 
 **PAD (Affective) - Dynamic from context:**
-- **Pleasure:** Happiness [0=Negative, 1=Positive]
-- **Arousal:** Energy [0=Calm, 1=Excited]
-- **Dominance:** Control [0=Submissive, 1=Dominant]
+| Dimension | Range | Description |
+|-----------|-------|-------------|
+| Pleasure | 0=Sad → 1=Happy | Emotional valence |
+| Arousal | 0=Calm → 1=Excited | Energy level |
+| Dominance | 0=Submissive → 1=Dominant | Sense of control |
 
 **BDI (Cognitive) - Static configuration:**
-- **Belief:** Trust [0=Trusting, 1=Skeptical]
-- **Goal:** Focus [0=Aimless, 1=Focused]
-- **Intention:** Analysis [0=Surface, 1=Deep]
-- **Ambiguity:** Certainty [0=Uncertain, 1=Certain]
-- **Social:** Politeness [0=Blunt, 1=Polite]
+| Dimension | Range | Description |
+|-----------|-------|-------------|
+| Belief | 0=Trusting → 1=Skeptical | Trust level |
+| Goal | 0=Aimless → 1=Focused | Goal orientation |
+| Intention | 0=Surface → 1=Deep | Analysis depth |
+| Ambiguity | 0=Uncertain → 1=Certain | Confidence |
+| Social | 0=Blunt → 1=Polite | Social style |
 
-### Steering Process
+-----
 
-1. VAE encodes context → PAD vector [3D]
-2. User configures BDI profile [5D]
-3. Both normalized to [-1, 1] range
-4. Matrix multiplication creates steering vectors
-5. **Layer 10:** Inject PAD (emotional tone)
-6. **Layer 19:** Inject BDI (reasoning style)
-7. LLM generates steered response
+## 📬 Scientific Validation
 
+Paired validation (N=10 trials) comparing Baseline (α=0) vs Steered (α_pad=1.5, α_bdi=1.0).
 
-## 🔬 Scientific Validation
+### Affective Steering (PAD → Layer 10)
 
-Validated using ActAdd & PSYA metrics (n=10 trials):
+| Condition | Baseline | Steered | Δ | p-value |
+|-----------|----------|---------|---|---------|
+| Negative (P=0.1) | 0.687 | 0.563 | -0.124 | 0.624 |
+| Positive (P=0.9) | 0.763 | 0.999 | **+0.237** | **0.034*** |
 
-### Sentiment Steering (PAD)
+### Cognitive Steering (BDI → Layer 19)
 
-| Condition | RAW | SYSTEM | STEERED | Δ | p-value |
-|-----------|-----|--------|---------|---|---------|
-| Low (P=0.1) | 0.969 | 0.975 | 0.668 | **-0.308** | 0.046* |
-| Mid (P=0.5) | 0.087 | 0.853 | 0.997 | +0.144 | 0.154 |
-| High (P=0.9) | 0.088 | 0.805 | 0.999 | **+0.194** | 0.097 |
+| Persona | Baseline | Steered | Δ | p-value |
+|---------|----------|---------|---|---------|
+| Skeptical | 0.431 | 0.452 | +0.021 | 0.265 |
+| Casual | 0.320 | 0.329 | +0.009 | 0.454 |
+| Dominant | 0.399 | 0.390 | -0.009 | 0.849 |
 
-### Persona Alignment (BDI)
-
-| Persona | Neutral | Persona BDI | Δ Similarity | p-value |
-|---------|---------|-------------|--------------|---------|
-| Skeptical | 0.253 | 0.332 | **+0.079** | 0.003** |
-| Trusting | 0.267 | 0.235 | -0.032 | 0.065 |
-| Analytical | 0.226 | 0.315 | **+0.089** | 0.000*** |
-
-### Controllability
-
-Spearman correlation: **ρ = 0.900**, p = 0.037*
-
-Results show steering effects, with analytical and skeptical personas achieving significant alignment.
+**Results:** Positive sentiment steering achieved statistical significance (p=0.034, Δ=+0.237). Both sentiment conditions showed correct directionality. Persona effects were subtle due to adversarial prompts eliciting strong baseline responses, but steering maintained coherence without degradation.
 
 -----
 
